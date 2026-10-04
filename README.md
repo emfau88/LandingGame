@@ -8,6 +8,18 @@ Vollständiger statischer Onepager für emfau mit drei vergleichbaren Gestaltung
 
 Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen den Varianten um. Beim Wechsel startet die Seite oben. Die Auswahl bleibt lokal im Browser gespeichert. `?design=clean`, `?design=blue` und `?design=dark` öffnen eine Variante direkt. Blau ist der Standard ohne gespeicherte Auswahl; eine vorhandene Auswahl bleibt erhalten.
 
+## Online ausprobieren
+
+**[Vorschau öffnen · Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)**
+
+Die drei Varianten direkt vergleichen:
+
+- [Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)
+- [Clean Grün](https://emfau88.github.io/LandingGame/?design=clean)
+- [Dark](https://emfau88.github.io/LandingGame/?design=dark)
+
+GitHub Actions veröffentlicht bei jedem Push auf `main` den Ordner `emfau-site/dist` auf GitHub Pages. Den Veröffentlichungsstatus findest du unter [Actions](https://github.com/emfau88/LandingGame/actions/workflows/pages.yml). Die Onlinefassung ist eine Designvorschau; Kontaktversand und endgültige Anbieterangaben fehlen noch.
+
 ## Lokal ansehen
 
 Die Website benötigt keine Paketinstallation und keinen Build. Im Repository ausführen:
