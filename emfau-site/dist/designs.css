@@ -14,6 +14,8 @@ body { overflow-anchor: none; }
 .design-options button[aria-pressed="true"] { background: #161616; color: #fff; }
 .design-options button:hover { background: #ddd; color: #161616; }
 .design-options button[aria-pressed="true"]:hover { background: #333; color: #fff; }
+.design-options .studio-link { padding: 5px 12px; border-left: 1px solid #d8d8d8; color: #365f91; font-size: 12px; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+.design-options .studio-link:hover { color: #161616; }
 .clean-copy, .clean-project { display: none; }
 html[data-layout="clean"] .dark-copy { display: none; }
 html[data-layout="clean"] .clean-copy { display: inline; }
@@ -260,4 +262,9 @@ html[data-design="blue"] .step-result { background: #ffffff12; color: #fff; }
 html[data-design="blue"] .contact-dot { background: #2452e8; }
 @media (max-width: 700px) {
   .design-options button { padding-inline: 9px; }
+  .design-options .studio-link { padding-inline: 9px; }
+}
+@media (max-width: 380px) {
+  .design-toolbar-inner > span:first-child { display: none; }
+  .design-options { margin-left: 0; }
 }

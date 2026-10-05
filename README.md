@@ -10,6 +10,10 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 ## Online ausprobieren
 
+**[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
+
+Die zusätzliche Seite hat eine eigene Komposition: zurückhaltende Typografie mit einem Serifenkontrast, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Seite enthält keine automatisch laufenden Animationen. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+
 **[Vorschau öffnen · Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)**
 
 Die drei Varianten direkt vergleichen:
@@ -38,6 +42,7 @@ Dann http://127.0.0.1:8770/ öffnen.
 - `emfau-site/dist/design.js`: lokale Designauswahl und direkter Vergleich der drei Varianten.
 - `emfau-site/dist/app.js`: mobile Navigation, Branchentabs, FAQ-Umgebung, Dialoge und lokale Anfragevorbereitung.
 - `emfau-site/dist/assets/`: lokal ausgelieferte Schrift, Bilder und echte OMF-Screenshots.
+- `emfau-site/dist/studio/`: zusätzliche, eigenständige Gestaltungsvariante mit eigener HTML-, CSS- und JavaScriptdatei.
 - `emfau-homepage-plan.md`: ursprüngliche Positionierung und Projektplanung.
 
 Die OMF-Screenshots zeigen die öffentliche Entwicklungsvorschau vom 4. Oktober 2026. Die Referenz bleibt als **Kundenprojekt · in Entwicklung** gekennzeichnet.
@@ -45,6 +50,8 @@ Die OMF-Screenshots zeigen die öffentliche Entwicklungsvorschau vom 4. Oktober 
 ## Prüfung
 
 Die Gestaltung wurde im Browser bei 1440, 837, 390 und 320 Pixeln kontrolliert. Geprüft wurden Designwechsel und gespeicherte Auswahl, mobile Navigation, Branchentabs einschließlich Tastaturbedienung, lokale Anfragevorbereitung, Impressumdialog und der Rücksprung zum Seitenanfang. Die geprüften Ansichten hatten keinen horizontalen Seitenüberlauf. Zusätzlich bestanden beide JavaScriptdateien die Syntaxprüfung; interne Sprungziele, eindeutige HTML-IDs und lokale Ressourcen wurden kontrolliert.
+
+Der zusätzliche Studio-Entwurf wurde bei 1440, 800, 390 und 320 Pixeln geprüft. Die beiden Projektansichten laden korrekt; die Seite hat keinen horizontalen Überlauf. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe, lokale Anfragevorbereitung und Änderungen am Anfragetext wurden geprüft.
 
 ## Noch vor dem öffentlichen Start ergänzen
 
