@@ -15,6 +15,7 @@
   if (!ctx) return;
 
   let image;
+  let eyeImage;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
   // Each original PNG is preserved. These bounds select its generated cutouts.
@@ -40,7 +41,11 @@
       },
       body: [93, 110, 134, 118], branch: [17, 154, 286, 141],
       headHeight: 126, eyeX: 27.8, eyeY: -52, eyeRadius: 15.1,
-      pupilSize: 27, lidWidth: 40, lidHeight: 39
+      pupilSize: 25.5, lidWidth: 40, lidHeight: 39,
+      eyes: [
+        {x: -26.11, y: -52.20, rx: 15.67, ry: 16.62},
+        {x: 30.07, y: -51.88, rx: 15.98, ry: 16.94}
+      ]
     }
   };
   const assets = new Map();
@@ -65,6 +70,16 @@
   let lookY = 0;
   let bounds = null;
   let updateBounds = true;
+  let pointer = null;
+  let gaze = null;
+  const eyeFrames = {
+    iris: [130, 58, 610, 607], pupil: [916, 100, 524, 524],
+    glint: [1760, 265, 190, 176]
+  };
+
+  function eyeSprite(name, x, y, width, height) {
+    ctx.drawImage(eyeImage, ...eyeFrames[name], x, y, width, height);
+  }
 
   function resize() {
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -93,14 +108,43 @@
     }
   }
 
-  function eye(x, y, blink, lid) {
+  function eye(x, y, blink, lid, socket) {
     const rig = styles[style];
     ctx.save();
     ctx.beginPath();
-    ctx.ellipse(x, y, rig.eyeRadius, rig.eyeRadius * .96, 0, 0, Math.PI * 2);
+    ctx.ellipse(x, y, socket ? socket.rx : rig.eyeRadius,
+      socket ? socket.ry : rig.eyeRadius * .96, 0, 0, Math.PI * 2);
     ctx.clip();
     const pupil = rig.pupilSize;
-    sprite('pupil', x - pupil / 2 + lookX * 4.1, y - pupil / 2 + lookY * 3.6, pupil, pupil);
+    if (socket) {
+      // Cover the pale ring in the original head all the way to its brown rim.
+      eyeSprite('iris', x - socket.rx - .35, y - socket.ry - .35,
+        socket.rx * 2 + .7, socket.ry * 2 + .7);
+      let dx = 0;
+      let dy = 0;
+      if (gaze && !reducedMotion.matches) {
+        const rect = canvas.getBoundingClientRect();
+        const point = new DOMPoint((gaze.x - rect.left) * canvas.width / rect.width,
+          (gaze.y - rect.top) * canvas.height / rect.height);
+        // Each eye aims at the same screen point, in its own moving head space.
+        const local = point.matrixTransform(ctx.getTransform().inverse());
+        dx = local.x - x;
+        dy = local.y - y;
+        const distance = Math.sqrt(dx * dx + dy * dy + 150 * 150);
+        dx /= distance;
+        dy /= distance;
+      }
+      eyeSprite('pupil', x - pupil / 2 + dx * 5.2,
+        y - pupil / 2 + dy * 4.6, pupil, pupil);
+      // Corneal reflections belong to the eye surface, independently of the pupil.
+      eyeSprite('glint', x - 6 + dx * .7, y - 8 + dy * .55, 4.5, 4.2);
+      ctx.save();
+      ctx.globalAlpha = .3;
+      eyeSprite('glint', x + 3.8, y + 4.5, 1.6, 1.4);
+      ctx.restore();
+    } else {
+      sprite('pupil', x - pupil / 2 + lookX * 4.1, y - pupil / 2 + lookY * 3.6, pupil, pupil);
+    }
     ctx.restore();
     if (blink > 0) {
       // The generated feather eyelid slides over the iris, rather than shrinking
@@ -150,9 +194,16 @@
     ctx.rotate(lookX * .067 + wind * .008);
     ctx.scale(1 - Math.abs(lookX) * .055, 1 - Math.abs(lookY) * .025);
     warpedSprite('head', -72, -119, 144, rig.headHeight, lookX * 6);
-    const faceShift = Math.sin(Math.PI * ((rig.eyeY + 119) / rig.headHeight)) * lookX * 6;
-    eye(-rig.eyeX + faceShift, rig.eyeY, blink, 'lidLeft');
-    eye(rig.eyeX + faceShift, rig.eyeY, blink, 'lidRight');
+    if (rig.eyes) {
+      rig.eyes.forEach((socket, i) => {
+        const shift = Math.sin(Math.PI * ((socket.y + 119) / rig.headHeight)) * lookX * 6;
+        eye(socket.x + shift, socket.y, blink, i ? 'lidRight' : 'lidLeft', socket);
+      });
+    } else {
+      const faceShift = Math.sin(Math.PI * ((rig.eyeY + 119) / rig.headHeight)) * lookX * 6;
+      eye(-rig.eyeX + faceShift, rig.eyeY, blink, 'lidLeft');
+      eye(rig.eyeX + faceShift, rig.eyeY, blink, 'lidRight');
+    }
     ctx.restore();
     ctx.restore();
 
@@ -173,6 +224,11 @@
     const follow = 1 - Math.exp(-elapsed * 18);
     lookX += (targetX - lookX) * follow;
     lookY += (targetY - lookY) * follow;
+    if (pointer) {
+      if (!gaze) gaze = {...pointer};
+      gaze.x += (pointer.x - gaze.x) * follow;
+      gaze.y += (pointer.y - gaze.y) * follow;
+    }
     if (time >= nextBlink) {
       blinkStart = time;
       nextBlink = time + 3.5 + Math.random() * 5;
@@ -193,6 +249,7 @@
     if (!enabled || !loaded) return;
     if (reducedMotion.matches) {
       targetX = targetY = lookX = lookY = 0;
+      pointer = gaze = null;
       draw(0);
     } else if (intersecting && !document.hidden) {
       raf = requestAnimationFrame(tick);
@@ -212,6 +269,19 @@
     }
     const asset = assets.get(requestedStyle);
     await asset.promise;
+    if (requestedStyle === 'comic') {
+      if (!assets.has('eyes')) {
+        const artwork = new Image();
+        const promise = new Promise((resolve, reject) => {
+          artwork.onload = resolve;
+          artwork.onerror = () => { assets.delete('eyes'); reject(new Error('Owl eyes unavailable')); };
+        });
+        assets.set('eyes', {image: artwork, promise});
+        artwork.src = new URL('../assets/emfau-owl-eyes-v2.png', document.baseURI).href;
+      }
+      await assets.get('eyes').promise;
+      eyeImage = assets.get('eyes').image;
+    }
     if (style !== requestedStyle) return;
     image = asset.image;
     frames = styles[requestedStyle].frames;
@@ -252,6 +322,7 @@
     const dy = event.clientY - cy;
     targetX = clamp(dx / (dx < 0 ? cx : innerWidth - cx), -1, 1);
     targetY = clamp(dy / (dy < 0 ? cy : innerHeight - cy), -1, 1);
+    pointer = {x: event.clientX, y: event.clientY};
   }, {passive: true});
   canvas.addEventListener('pointerdown', event => {
     if (event.pointerType === 'touch') {

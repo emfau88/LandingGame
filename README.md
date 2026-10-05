@@ -23,6 +23,8 @@ Der Schalter **Eule testen** oben aktiviert die Vorschau im Kontaktbereich. Unte
 
 Eigene, mit ImageGen erzeugte transparente Rasterbilder werden per Canvas animiert: Kopf, Körper, Blick und Ast reagieren auf die Position des Mauszeigers; sanftes Atmen, gelegentliches Blinzeln und kurze Schwanzschüttelbewegungen laufen unabhängig davon. Auf Touchgeräten reagiert die Eule auf Berührung in ihrem Bereich. Bei reduzierter Bewegung bleibt sie statisch. Ausgeblendete Eulen, nicht sichtbare Bereiche und Hintergrundtabs verursachen keine laufende Zeichenschleife. Die Umsetzung verwendet weder SVG für die Eule noch die Spine-Runtime und beansprucht keine identische Rigging-Qualität wie das Spine-Beispiel. Die unveränderten PNG-Atlanten liegen in `assets/`; die ImageGen-Prompts liegen in `output/imagegen/`.
 
+Die Comic-Augen verwenden eine zusätzliche ImageGen-Textur: Die Iris füllt die vermessenen Augenhöhlen bis zum braunen Rand, ohne den ursprünglichen hellen Saum. Beide Pupillen richten sich einzeln auf denselben Mauspunkt aus. Kleinere Lichtreflexe sitzen weitgehend unabhängig von den Pupillen auf der Augenoberfläche. Die bisherige Eule behält ihre ursprüngliche Augengestaltung.
+
 **[Vorschau öffnen · Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)**
 
 Die drei Varianten direkt vergleichen:
