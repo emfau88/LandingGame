@@ -47,6 +47,14 @@ Dann http://127.0.0.1:8770/ öffnen.
 
 ## Dateien
 
+### Logo und Würfel · vorbereitet, noch nicht eingebaut
+
+Die [separate Sammlung der Originaldateien](design-assets/emfau-brand/README.md) enthält das geometrische emfau-Logo in heller und dunkler SVG-Fassung sowie die PNG-Vorlage aus **blueyard**, den rotierenden CSS-Logo-Würfel und den anderen interaktiven Three.js-Würfel. Schriftzug und E-Favicon aus **basement** sind mit eindeutiger Herkunft ebenfalls abgelegt. Ein Manifest dokumentiert Quellcommits und Prüfsummen.
+
+Die Sammlung liegt außerhalb des veröffentlichten Website-Ordners und verändert die Vorschau nicht.
+
+### Website und Planung
+
 - `emfau-site/dist/index.html`: Inhalte und semantische Struktur.
 - `emfau-site/dist/styles.css`: ursprüngliche Gestaltung und gemeinsame Komponenten.
 - `emfau-site/dist/designs.css`: Designschalter und Clean-Gestaltung.

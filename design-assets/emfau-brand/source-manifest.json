@@ -1,0 +1,96 @@
+{
+  "purpose": "Original brand assets and cube source archive; not integrated into the website",
+  "files": [
+    {
+      "localPath": "blueyard/components/experience-loader.tsx",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "components/experience-loader.tsx",
+      "sha256": "3f6aa95e4bd2fe7a8453f7a2e376b47f0ce260dd4682dc59c33f6b51d77de1b0"
+    },
+    {
+      "localPath": "blueyard/components/emfau-cube.tsx",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "components/emfau-cube.tsx",
+      "sha256": "c5efc3e0193a1b47fea5c584329cb8cbb8ce9e22a55a7d29330816ce989b6c77"
+    },
+    {
+      "localPath": "blueyard/app/globals.css",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "app/globals.css",
+      "sha256": "b334ff937551cce02b8ee587d5241922cffc56ec5b1e2d0042be819659826fcf"
+    },
+    {
+      "localPath": "blueyard/lib/site-path.ts",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "lib/site-path.ts",
+      "sha256": "8bf3cc526fabdc27062c2d62b21bb4bf9f3495bbe5b686f843f4730ba44b4d8c"
+    },
+    {
+      "localPath": "blueyard/lib/content.ts",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "lib/content.ts",
+      "sha256": "092a4a1dc0ba8a8186b295af7ce99bf44e6278ff86ed6349553af8e62b63ae61"
+    },
+    {
+      "localPath": "blueyard/public/brand/emfau-mark.svg",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "public/brand/emfau-mark.svg",
+      "sha256": "fbe2ddc25957e745d6c7ec994d7b5ca2956e78adb9ad1ccf1a32ea5dfb33000f"
+    },
+    {
+      "localPath": "blueyard/public/brand/emfau-mark-dark.svg",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "public/brand/emfau-mark-dark.svg",
+      "sha256": "c048be1b19aad96025947b540f3152b3b5b443b1599e40f7b9fd33a7e75fd5a2"
+    },
+    {
+      "localPath": "blueyard/public/brand/emfau-logo-source.png",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "public/brand/emfau-logo-source.png",
+      "sha256": "e6f5d4d73c75685ebfed9dff781fa2e4b7216ac072f1c9ff06f6696c74377135"
+    },
+    {
+      "localPath": "blueyard/docs/brand-foundation.md",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "docs/brand-foundation.md",
+      "sha256": "cb37f6777229bf0a77614c2af0c5477f18252bcc09e6548ffb7ae6bd417983a3"
+    },
+    {
+      "localPath": "blueyard/package.json",
+      "repository": "https://github.com/emfau88/blueyard",
+      "commit": "fe70c409a3e28c6b7cf5b42e4e3844804fe07521",
+      "sourcePath": "package.json",
+      "sha256": "42cca8331c461b3fae07492ecb3aca3d68145f646b2f833d0202e5fffae742d7"
+    },
+    {
+      "localPath": "basement/src/styles/base.css",
+      "repository": "https://github.com/emfau88/basement",
+      "commit": "84969692d26c876f6d4f4fef3cd5f290a3635760",
+      "sourcePath": "src/styles/base.css",
+      "sha256": "c53470c793d7b9537ead10964c44cf64b2d22ade5b52f58521285f230243ca0a"
+    },
+    {
+      "localPath": "basement/index.html",
+      "repository": "https://github.com/emfau88/basement",
+      "commit": "84969692d26c876f6d4f4fef3cd5f290a3635760",
+      "sourcePath": "index.html",
+      "sha256": "eaac94afb8fcf4e60620b1f2ecd5eae3ac5a8a52f95be9fe1c6b2d8a2c77a147"
+    },
+    {
+      "localPath": "basement/public/favicon.svg",
+      "repository": "https://github.com/emfau88/basement",
+      "commit": "84969692d26c876f6d4f4fef3cd5f290a3635760",
+      "sourcePath": "public/favicon.svg",
+      "sha256": "5096192ee38664fddcd324db97de1c46f65af846bc9f04c0bb9bbbf8718bbeda"
+    }
+  ]
+}

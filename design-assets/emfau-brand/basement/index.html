@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d9d4c9">
+<title>EMFAU — Virtual Studio v11</title>
+<meta name="description" content="EMFAU Virtual Studio — a bright interactive developer studio for games, web and experiments.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+
+<link rel="stylesheet" href="/src/styles/base.css">
+<link rel="stylesheet" href="/src/styles/responsive.css">
+</head>
+
+<body>
+<div id="app"></div>
+<div class="sunwash"></div><div class="vignette"></div><div class="grain"></div><div class="fade" id="fade"></div>
+
+<div class="loader" id="loader" role="progressbar" aria-label="Loading virtual studio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="loadinner">
+    <div class="loadtop"><div class="loadmark">emfau</div><div class="loadlabel" id="loadlabel">opening studio</div></div>
+    <div class="loadbar"><i id="loadbar"></i></div>
+  </div>
+</div>
+
+<aside class="webgl-recovery" id="webglRecovery" role="status" hidden>
+  <strong>Restoring the studio…</strong>
+  <span>The 3D connection was interrupted. The scene will return automatically.</span>
+</aside>
+
+<header class="top">
+  <div class="logo">emfau</div>
+  <div class="manifesto">A bright digital workshop for<br>games, web & experiments</div>
+  <div class="live">Studio online</div>
+</header>
+
+<section class="intro">
+  <div class="kicker">Virtual Studio / v11</div>
+  <h1>ENTER THE<br>STUDIO.</h1>
+  <p>Inspectable screens, context-aware HUD placement and calibrated project displays.</p>
+</section>
+
+<aside class="info">
+  <div class="card">
+    <button class="close" id="close" type="button" aria-label="Return to studio overview">×</button>
+    <div class="eyebrow" id="eyebrow"></div>
+    <h2 id="title"></h2>
+    <p id="copy"></p>
+    <div class="rows" id="rows"></div>
+    <button class="archive-enter" id="archiveEnter" type="button">Enter project cemetery <span aria-hidden="true">→</span></button>
+  </div>
+</aside>
+
+<aside class="mobile-sheet" id="mobileSheet" aria-label="Current studio area">
+  <button class="mobile-sheet-toggle" id="mobileSheetToggle" type="button" aria-expanded="false" aria-controls="mobileSheetPanel">
+    <span class="mobile-sheet-index" id="mobileSheetIndex"></span>
+    <span class="mobile-sheet-summary">
+      <strong id="mobileSheetLabel"></strong>
+      <span id="mobileSheetCount"></span>
+    </span>
+    <span class="mobile-sheet-chevron" aria-hidden="true">⌃</span>
+  </button>
+  <div class="mobile-sheet-panel" id="mobileSheetPanel" aria-hidden="true" inert>
+    <div class="mobile-sheet-kicker" id="mobileSheetKicker"></div>
+    <h2 id="mobileSheetTitle"></h2>
+    <p id="mobileSheetCopy"></p>
+    <div class="mobile-project-track" id="mobileProjectTrack" role="listbox" aria-label="Select project"></div>
+    <div class="mobile-sheet-actions">
+      <button type="button" class="mobile-open-project" id="mobileOpenProject">Open project</button>
+      <button type="button" class="mobile-inspect-projects" id="mobileGameInspect">View room selector</button>
+    </div>
+  </div>
+</aside>
+
+<div class="tooltip" id="tooltip"></div>
+<div class="helper">Click work areas · ESC returns</div>
+<div class="studio-look-hint" id="studioLookHint">Drag to look around · Click an area</div>
+<button class="sound" id="sound" type="button" aria-pressed="false">Sound off</button>
+<button class="inspect-back" id="inspectBack" type="button">← Games overview</button>
+
+<div class="project-backdrop" id="projectBackdrop"></div>
+<aside class="project-panel" id="projectPanel" role="dialog" aria-modal="true" aria-labelledby="projectTitle" aria-hidden="true" tabindex="-1" inert>
+  <div class="project-shell">
+    <div class="project-media">
+      <img id="projectImage" alt="">
+      <button class="project-close" id="projectClose" aria-label="Close">×</button>
+    </div>
+    <div class="project-copy">
+      <div class="project-tag" id="projectTag">Featured Project</div>
+      <h3 id="projectTitle"></h3>
+      <p id="projectSummary"></p>
+      <div class="project-meta" id="projectMeta"></div>
+      <div class="project-actions" id="projectActions"></div>
+    </div>
+  </div>
+</aside>
+
+<div class="navwrap">
+  <nav class="nav">
+    <button type="button" class="active" data-view="studio"><span class="n">00</span><span class="t">Studio</span></button>
+    <button type="button" data-view="games"><span class="n">01</span><span class="t">Games</span></button>
+    <button type="button" data-view="web"><span class="n">02</span><span class="t">Web</span></button>
+    <button type="button" data-view="projects"><span class="n">03</span><span class="t">Projects</span></button>
+    <button type="button" data-view="archive"><span class="n">04</span><span class="t">Archive</span></button>
+  </nav>
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
