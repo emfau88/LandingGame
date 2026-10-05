@@ -45,11 +45,11 @@
     const message = String(data.get('message')).trim();
     if (!name || message.length < 10) {
       const field = !name ? form.elements.name : form.elements.message;
-      field.setCustomValidity(!name ? 'Bitte gib deinen Namen ein.' : 'Beschreibe dein Vorhaben bitte mit mindestens 10 Zeichen.');
+      field.setCustomValidity(!name ? 'Bitte geben Sie Ihren Namen ein.' : 'Beschreiben Sie Ihr Vorhaben bitte mit mindestens 10 Zeichen.');
       field.reportValidity();
       return;
     }
-    text.value = `Hallo emfau,\n\nich möchte mit dir über eine Website sprechen.\n\nName: ${name}\nE-Mail: ${email}\n\n${message}\n\nViele Grüße\n${name}`;
+    text.value = `Hallo emfau,\n\nich möchte mit Ihnen über eine Website sprechen.\n\nName: ${name}\nE-Mail: ${email}\n\n${message}\n\nViele Grüße\n${name}`;
     status.textContent = '';
     result.hidden = false;
     result.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest'});
@@ -62,10 +62,10 @@
   document.getElementById('copy-inquiry').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(text.value);
-      status.textContent = 'Kopiert. Deine Anfrage liegt in deiner Zwischenablage.';
+      status.textContent = 'Kopiert. Ihre Anfrage liegt in Ihrer Zwischenablage.';
     } catch {
       text.focus(); text.select();
-      status.textContent = 'Bitte kopiere den markierten Text mit Strg+C oder über das Auswahlmenü.';
+      status.textContent = 'Bitte kopieren Sie den markierten Text mit Strg+C oder über das Auswahlmenü.';
     }
   });
   document.getElementById('download-inquiry').addEventListener('click', () => {
@@ -74,6 +74,6 @@
     link.href = url; link.download = 'meine-anfrage-an-emfau.txt';
     document.body.appendChild(link); link.click(); link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    status.textContent = 'Deine Anfrage wurde als Text zum Herunterladen vorbereitet.';
+    status.textContent = 'Ihre Anfrage wurde als Text zum Herunterladen vorbereitet.';
   });
 })();

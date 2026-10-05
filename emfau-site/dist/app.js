@@ -49,11 +49,11 @@ projectForm.addEventListener('submit', event => {
   const message = String(data.get('message')).trim();
   if(!name || message.length < 10) {
     const field = !name ? projectForm.elements.name : projectForm.elements.message;
-    field.setCustomValidity(!name ? 'Bitte gib deinen Namen ein.' : 'Beschreibe dein Vorhaben bitte mit mindestens 10 Zeichen.');
+    field.setCustomValidity(!name ? 'Bitte geben Sie Ihren Namen ein.' : 'Beschreiben Sie Ihr Vorhaben bitte mit mindestens 10 Zeichen.');
     field.reportValidity();
     return;
   }
-  inquiryText.value = `Hallo emfau,\n\nich möchte mit dir über eine Website sprechen.\n\nName: ${name}\nE-Mail: ${String(data.get('email')).trim()}\nProjekt: ${data.get('projectType')}\n\n${message}\n\nViele Grüße\n${name}`;
+  inquiryText.value = `Hallo emfau,\n\nich möchte mit Ihnen über eine Website sprechen.\n\nName: ${name}\nE-Mail: ${String(data.get('email')).trim()}\nProjekt: ${data.get('projectType')}\n\n${message}\n\nViele Grüße\n${name}`;
   result.hidden = false;
   copyStatus.textContent = '';
   result.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block:'nearest'});
@@ -66,11 +66,11 @@ projectForm.addEventListener('input', event => {
 document.getElementById('copy-inquiry').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(inquiryText.value);
-    copyStatus.textContent = 'Kopiert. Deine Anfrage liegt jetzt in deiner Zwischenablage.';
+    copyStatus.textContent = 'Kopiert. Ihre Anfrage liegt jetzt in Ihrer Zwischenablage.';
   } catch {
     inquiryText.focus();
     inquiryText.select();
-    copyStatus.textContent = 'Bitte kopiere den markierten Text mit Strg+C oder über das Auswahlmenü.';
+    copyStatus.textContent = 'Bitte kopieren Sie den markierten Text mit Strg+C oder über das Auswahlmenü.';
   }
 });
 document.getElementById('download-inquiry').addEventListener('click', () => {
@@ -79,7 +79,7 @@ document.getElementById('download-inquiry').addEventListener('click', () => {
   link.href = url; link.download = 'meine-anfrage-an-emfau.txt';
   document.body.appendChild(link); link.click(); link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-  copyStatus.textContent = 'Der Download deiner Anfrage wurde gestartet.';
+  copyStatus.textContent = 'Der Download Ihrer Anfrage wurde gestartet.';
 });
 
 document.querySelectorAll('[data-dialog]').forEach(button => {
