@@ -1,0 +1,26 @@
+.owl-toggle {
+  margin-left: auto;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  white-space: nowrap;
+  color: var(--muted);
+}
+.owl-toggle:hover, .owl-toggle[aria-pressed="true"] { color: var(--blue); }
+.owl-toggle[aria-pressed="true"] { font-weight: 700; }
+.owl-figure { width: 230px; max-width: 100%; margin: 18px 0 0; }
+.owl-canvas { display: block; width: 100%; height: auto; aspect-ratio: 320 / 340; touch-action: pan-y; }
+.owl-figure figcaption { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: -9px; font-size: 11px; color: var(--muted); }
+.owl-style { max-width: 140px; padding: 4px 17px 4px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; font: inherit; color: var(--muted); background: transparent; }
+.owl-dismiss { background: none; border: 0; padding: 8px 0; color: var(--muted); font-size: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.owl-error { font-size: 13px; color: var(--muted); }
+.contact-copy.owl-enabled .contact-signature { display: none; }
+@media (max-width: 620px) {
+  .version-inner { flex-wrap: wrap; column-gap: 18px; row-gap: 0; }
+  .owl-toggle { min-height: 36px; }
+  .owl-figure { width: 220px; margin: 20px auto 0; }
+}
+@media (max-width: 470px) {
+  .owl-toggle { margin-left: 0; width: 100%; padding: 5px 0 8px; min-height: 28px; text-align: left; }
+}

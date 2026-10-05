@@ -12,7 +12,16 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
-Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Seite enthält keine automatisch laufenden Animationen. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+
+### Interaktive Eule vergleichen
+
+- [Kleinere Comic-Eule ausprobieren](https://emfau88.github.io/LandingGame/studio/?owl=on#kontakt)
+- [Bisherige Eule ausprobieren](https://emfau88.github.io/LandingGame/studio/?owl=on&owl-style=natural#kontakt)
+
+Der Schalter **Eule testen** oben aktiviert die Vorschau im Kontaktbereich. Unter der Eule lässt sich zwischen **Comic** und **Bisherige Eule** wechseln. Die bisherige Zeichnung bleibt als eigene Bilddatei erhalten. Die Comic-Variante ist die Standardauswahl; ohne `?owl=on` bleibt die Eule ausgeschaltet und ihre Grafik wird nicht geladen.
+
+Eigene, mit ImageGen erzeugte transparente Rasterbilder werden per Canvas animiert: Kopf, Körper, Blick und Ast reagieren auf die Position des Mauszeigers; sanftes Atmen, gelegentliches Blinzeln und kurze Schwanzschüttelbewegungen laufen unabhängig davon. Auf Touchgeräten reagiert die Eule auf Berührung in ihrem Bereich. Bei reduzierter Bewegung bleibt sie statisch. Ausgeblendete Eulen, nicht sichtbare Bereiche und Hintergrundtabs verursachen keine laufende Zeichenschleife. Die Umsetzung verwendet weder SVG für die Eule noch die Spine-Runtime und beansprucht keine identische Rigging-Qualität wie das Spine-Beispiel. Die unveränderten PNG-Atlanten liegen in `assets/`; die ImageGen-Prompts liegen in `output/imagegen/`.
 
 **[Vorschau öffnen · Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)**
 
@@ -52,6 +61,8 @@ Die OMF-Screenshots zeigen die öffentliche Entwicklungsvorschau vom 4. Oktober 
 Die Gestaltung wurde im Browser bei 1440, 837, 390 und 320 Pixeln kontrolliert. Geprüft wurden Designwechsel und gespeicherte Auswahl, mobile Navigation, Branchentabs einschließlich Tastaturbedienung, lokale Anfragevorbereitung, Impressumdialog und der Rücksprung zum Seitenanfang. Die geprüften Ansichten hatten keinen horizontalen Seitenüberlauf. Zusätzlich bestanden beide JavaScriptdateien die Syntaxprüfung; interne Sprungziele, eindeutige HTML-IDs und lokale Ressourcen wurden kontrolliert.
 
 Der zusätzliche Studio-Entwurf wurde bei 1440, 800, 390 und 320 Pixeln geprüft. Die beiden Projektansichten laden korrekt; die Seite hat keinen horizontalen Überlauf. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe, lokale Anfragevorbereitung und Änderungen am Anfragetext wurden geprüft.
+
+Die Eule wurde zusätzlich mit einer lokalen, angehaltenen Animationsuhr geprüft: unterschiedliche Blickrichtungen, Blinzeln ohne Mausbewegung, Schwanzbewegung mit Ruhepausen, Umschalten beider Zeichnungen, Ausblenden/Wiederanzeigen und statische Darstellung bei reduzierter Bewegung. Die 390- und 320-Pixel-Ansichten haben keinen horizontalen Seitenüberlauf. Diese lokale Prüfseite gehört nicht zur veröffentlichten Vorschau.
 
 ## Noch vor dem öffentlichen Start ergänzen
 
