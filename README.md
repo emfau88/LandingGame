@@ -12,7 +12,7 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
-Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Das statische geometrische emfau-Logo steht neben dem Schriftzug im Kopfbereich. OMF wird kompakt als abgeschlossenes Kundenprojekt vorgestellt; die beiden Websiteansichten bleiben erhalten. Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
 
 ### Interaktive Eule vergleichen
 
@@ -47,11 +47,11 @@ Dann http://127.0.0.1:8770/ öffnen.
 
 ## Dateien
 
-### Logo und Würfel · vorbereitet, noch nicht eingebaut
+### Logo und Würfel
 
 Die [separate Sammlung der Originaldateien](design-assets/emfau-brand/README.md) enthält das geometrische emfau-Logo in heller und dunkler SVG-Fassung sowie die PNG-Vorlage aus **blueyard**, den rotierenden CSS-Logo-Würfel und den anderen interaktiven Three.js-Würfel. Schriftzug und E-Favicon aus **basement** sind mit eindeutiger Herkunft ebenfalls abgelegt. Ein Manifest dokumentiert Quellcommits und Prüfsummen.
 
-Die Sammlung liegt außerhalb des veröffentlichten Website-Ordners und verändert die Vorschau nicht.
+Die Originalsammlung liegt außerhalb des veröffentlichten Website-Ordners. Für den Studio-Kopfbereich wird eine unveränderte Kopie des dunklen SVG-Logos aus `emfau-site/dist/assets/emfau-mark-dark.svg` verwendet. Die Würfelquellen bleiben unverbunden.
 
 ### Website und Planung
 
@@ -64,13 +64,13 @@ Die Sammlung liegt außerhalb des veröffentlichten Website-Ordners und verände
 - `emfau-site/dist/studio/`: zusätzliche, eigenständige Gestaltungsvariante mit eigener HTML-, CSS- und JavaScriptdatei.
 - `emfau-homepage-plan.md`: ursprüngliche Positionierung und Projektplanung.
 
-Die OMF-Screenshots zeigen die öffentliche Entwicklungsvorschau vom 4. Oktober 2026. Die Referenz bleibt als **Kundenprojekt · in Entwicklung** gekennzeichnet.
+Die OMF-Screenshots zeigen die öffentliche Entwicklungsvorschau vom 4. Oktober 2026. Im Studio wird OMF auf Wunsch als **abgeschlossenes Kundenprojekt** dargestellt; die älteren Farbvergleichsseiten behalten ihre bisherigen Texte.
 
 ## Prüfung
 
 Die Gestaltung wurde im Browser bei 1440, 837, 390 und 320 Pixeln kontrolliert. Geprüft wurden Designwechsel und gespeicherte Auswahl, mobile Navigation, Branchentabs einschließlich Tastaturbedienung, lokale Anfragevorbereitung, Impressumdialog und der Rücksprung zum Seitenanfang. Die geprüften Ansichten hatten keinen horizontalen Seitenüberlauf. Zusätzlich bestanden beide JavaScriptdateien die Syntaxprüfung; interne Sprungziele, eindeutige HTML-IDs und lokale Ressourcen wurden kontrolliert.
 
-Der zusätzliche Studio-Entwurf wurde bei 1440, 800, 390 und 320 Pixeln geprüft. Die beiden Projektansichten laden korrekt; die Seite hat keinen horizontalen Überlauf. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe, lokale Anfragevorbereitung und Änderungen am Anfragetext wurden geprüft.
+Der zusätzliche Studio-Entwurf wurde bei 1440, 800, 390 und 320 Pixeln geprüft. Logo und OMF-Präsentation wurden zusätzlich bei 1440, 800, 390 und 320 Pixeln kontrolliert. Das SVG entspricht unverändert der archivierten Quelle; mobile Navigation und Desktop-Bildvergrößerung funktionieren. Die beiden Projektansichten laden korrekt; die Seite hat keinen horizontalen Überlauf. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe, lokale Anfragevorbereitung und Änderungen am Anfragetext wurden geprüft.
 
 Die Eule wurde zusätzlich mit einer lokalen, angehaltenen Animationsuhr geprüft: unterschiedliche Blickrichtungen, Blinzeln ohne Mausbewegung, Schwanzbewegung mit Ruhepausen, Umschalten beider Zeichnungen, Ausblenden/Wiederanzeigen und statische Darstellung bei reduzierter Bewegung. Die 390- und 320-Pixel-Ansichten haben keinen horizontalen Seitenüberlauf. Diese lokale Prüfseite gehört nicht zur veröffentlichten Vorschau.
 

@@ -31,7 +31,7 @@ Der Effekt braucht kein WebGL. Die originale React-Komponente verwendet jedoch N
 
 Das 2D-Zeichen eignet sich als kompakter Markenanker. Der CSS-Logo-Würfel ist eine mögliche kleine Animation oder gesonderte Vorschau. Für den ruhigen Studio-Auftritt sollte eine spätere Umsetzung bewusste Ruhephasen und reduzierte Bewegung berücksichtigen. Eule und Würfel sollten nicht gleichzeitig dauerhaft um Aufmerksamkeit konkurrieren.
 
-Noch keine Variante wurde in die Website eingebaut.
+Im Studio-Kopfbereich ist inzwischen eine unveränderte Kopie des dunklen 2D-Zeichens eingebaut. Beide Würfel bleiben reine Quelldateien für eine spätere Entscheidung.
 
 ## Herkunft und Prüfung
 
