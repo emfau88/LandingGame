@@ -1,0 +1,4 @@
+# Preserve archived source bytes and checksum manifests across operating systems.
+blueyard/** -text
+basement/** -text
+source-manifest.json -text
