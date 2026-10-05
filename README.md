@@ -12,7 +12,7 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
-Die zusätzliche Seite hat eine eigene Komposition: zurückhaltende Typografie mit einem Serifenkontrast, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Seite enthält keine automatisch laufenden Animationen. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Die Fallstudie erläutert Gestaltungsentscheidungen; Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Seite enthält keine automatisch laufenden Animationen. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
 
 **[Vorschau öffnen · Clean Blau](https://emfau88.github.io/LandingGame/?design=blue)**
 
