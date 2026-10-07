@@ -12,7 +12,11 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
-Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und zwei OMF-Ansichten – Desktop im Einstieg und Smartphone im Projektabschnitt. Das statische geometrische emfau-Logo steht neben dem Schriftzug im Kopfbereich. OMF wird kompakt als abgeschlossenes Kundenprojekt vorgestellt; die beiden Websiteansichten bleiben erhalten. Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und eine gemeinsame OMF-Präsentation aus Desktopansicht und überlagertem Smartphone im Einstieg. Das statische geometrische emfau-Logo steht neben dem Schriftzug im Kopfbereich. OMF wird kompakt als abgeschlossenes Kundenprojekt vorgestellt; die beiden Websiteansichten bleiben erhalten. Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
+
+### Signature-Konzepte
+
+Unter OMF zeigt der Studio-Entwurf vier zusätzliche Arbeitsbeispiele: **Aufschlag** (Sportverein), **Farbform** (Maler und Raumgestaltung), **Werkform** (Metallbau) und **Lindenwirt** (Gastronomie). Alle sind als fiktive Konzeptarbeiten gekennzeichnet. Echte Desktop- und Smartphone-Screenshots der Signature-Homepages werden gemeinsam dargestellt und lassen sich jeweils vergrößern; direkte Links öffnen die bedienbaren Signature-Demos. Die Präsentation verwendet statische, lokal gespeicherte WebP-Bilder mit verzögertem Laden. Die Quellen und das Aufnahmedatum sind in `emfau-site/dist/assets/projects/sources.json` dokumentiert.
 
 ### Interaktive Eule vergleichen
 
@@ -73,6 +77,8 @@ Die Gestaltung wurde im Browser bei 1440, 837, 390 und 320 Pixeln kontrolliert. 
 Der zusätzliche Studio-Entwurf wurde bei 1440, 800, 390 und 320 Pixeln geprüft. Logo und OMF-Präsentation wurden zusätzlich bei 1440, 800, 390 und 320 Pixeln kontrolliert. Das SVG entspricht unverändert der archivierten Quelle; mobile Navigation und Desktop-Bildvergrößerung funktionieren. Die beiden Projektansichten laden korrekt; die Seite hat keinen horizontalen Überlauf. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe, lokale Anfragevorbereitung und Änderungen am Anfragetext wurden geprüft.
 
 Die Eule wurde zusätzlich mit einer lokalen, angehaltenen Animationsuhr geprüft: unterschiedliche Blickrichtungen, Blinzeln ohne Mausbewegung, Schwanzbewegung mit Ruhepausen, Umschalten beider Zeichnungen, Ausblenden/Wiederanzeigen und statische Darstellung bei reduzierter Bewegung. Die 390- und 320-Pixel-Ansichten haben keinen horizontalen Seitenüberlauf. Diese lokale Prüfseite gehört nicht zur veröffentlichten Vorschau.
+
+Die vier Signature-Konzepte und die gemeinsame Desktop-/Smartphone-Darstellung wurden bei 1440, 800, 390 und 320 Pixeln geprüft. Alle zehn Bildvergrößerungen laden korrekt, die Geräteansichten bleiben innerhalb ihrer Flächen, und es gibt keinen horizontalen Überlauf. Die acht neuen Bilddateien, Dialogziele und eindeutigen HTML-IDs wurden ebenfalls kontrolliert.
 
 ## Noch vor dem öffentlichen Start ergänzen
 

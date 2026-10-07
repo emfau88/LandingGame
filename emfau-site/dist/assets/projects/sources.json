@@ -1,0 +1,124 @@
+{
+  "screenshots": [
+    {
+      "name": "Aufschlag",
+      "source": "https://emfau88.github.io/shop/konzept/sportverein/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1426,
+        "height": 1000
+      },
+      "asset": "aufschlag-signature.webp",
+      "description": "Screenshot der veröffentlichten Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Farbform",
+      "source": "https://emfau88.github.io/shop/konzept/maler/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1426,
+        "height": 1000
+      },
+      "asset": "farbform-signature.webp",
+      "description": "Screenshot der veröffentlichten Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Werkform",
+      "source": "https://emfau88.github.io/shop/konzept/metallbau/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1426,
+        "height": 1000
+      },
+      "asset": "werkform-signature.webp",
+      "description": "Screenshot der veröffentlichten Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Lindenwirt",
+      "source": "https://emfau88.github.io/shop/konzept/gastronomie/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1426,
+        "height": 1000
+      },
+      "asset": "lindenwirt-signature.webp",
+      "description": "Screenshot der veröffentlichten Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Aufschlag",
+      "source": "https://emfau88.github.io/shop/konzept/sportverein/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "imageSize": {
+        "width": 375,
+        "height": 844
+      },
+      "asset": "aufschlag-signature-mobile.webp",
+      "description": "Echter Screenshot der mobilen Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Farbform",
+      "source": "https://emfau88.github.io/shop/konzept/maler/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "imageSize": {
+        "width": 375,
+        "height": 844
+      },
+      "asset": "farbform-signature-mobile.webp",
+      "description": "Echter Screenshot der mobilen Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Werkform",
+      "source": "https://emfau88.github.io/shop/konzept/metallbau/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "imageSize": {
+        "width": 375,
+        "height": 844
+      },
+      "asset": "werkform-signature-mobile.webp",
+      "description": "Echter Screenshot der mobilen Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    },
+    {
+      "name": "Lindenwirt",
+      "source": "https://emfau88.github.io/shop/konzept/gastronomie/signature/",
+      "captured": "2026-10-07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "imageSize": {
+        "width": 375,
+        "height": 844
+      },
+      "asset": "lindenwirt-signature-mobile.webp",
+      "description": "Echter Screenshot der mobilen Signature-Homepage; als WebP gespeichert. Fiktives Konzeptprojekt."
+    }
+  ]
+}
