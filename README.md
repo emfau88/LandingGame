@@ -18,6 +18,8 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 Dieselben Inhalte und Funktionen, drei visuelle Interpretationen. Der gemeinsame modulare Hero zeigt ein Laptop-Mockup und ein Smartphone mit echten aktuellen OMF-Screenshots vor einer eigens erstellten Workspace-Grafik. Leistungen, OMF und alle vier Signature-Konzepte, persönlicher Abschnitt, Zusammenarbeit, FAQ und ehrliche lokale Anfragevorbereitung sind enthalten. Oben lässt sich direkt zwischen A/B/C wechseln. Die bestehende Studio-Version bleibt unverändert.
 
+A wurde mit größeren Detailtexten, einer ruhigeren Vorteilsleiste und lesbareren mobilen Leistungen weiterentwickelt. Die Texte beschreiben die persönliche Arbeit und das abgeschlossene OMF-Projekt konkreter; gemeinsame HTML-Semantik und Formularkontraste wurden ebenfalls verbessert.
+
 Die [Dokumentation mit Dateien, Assetquellen, Unterschieden, Platzhaltern und Browserprüfung](emfau-site/src/studio-variants/README.md) erklärt auch den gemeinsamen Generator. Echte Kontaktadresse, Name, Porträt und Nachrichtenversand fehlen weiterhin; die Varianten sind klar als Designvorschau behandelt.
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**

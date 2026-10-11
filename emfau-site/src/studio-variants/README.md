@@ -10,6 +10,16 @@ Alle drei Seiten verwenden dasselbe statische Template, dieselben Inhalte, Proje
 
 **Empfehlung: A.** Sie verbindet die ruhigste Hierarchie mit gut sichtbaren Arbeiten und einer klaren Kontaktführung. Das passt besonders gut zu einem regionalen Solo-Anbieter. B ist die markantere Alternative, C die wärmere. Alle verwenden die vorhandene lokal ausgelieferte Manrope.
 
+## Weiterentwicklung von A · 11. Oktober 2026
+
+A behält ihre ruhige Gestaltung, erhält aber größere Begleittexte und Bildunterschriften, eine Vorteilsleiste ohne dekorative Nummern und mehr Textbreite bei den mobilen Leistungen. Der mobile Einstieg wird etwas kompakter. Die vollständige OMF-Beschreibung bleibt auch auf Tabletbreite sichtbar.
+
+Die gemeinsamen Texte benennen die persönliche Rolle bei Planung, Gestaltung und Entwicklung, unterscheiden die drei Leistungen konkreter und beschreiben OMF als umgesetzte Vereinswebsite mit ihren wichtigsten Inhalten. Konzeptprojekte bleiben ausdrücklich fiktiv. Die Vertrauensebene ist eine echte Liste, die vier Konzeptprojekte stehen als H4 unter ihrer H3-Gruppenüberschrift, und das Formular ist mit Überschrift und Vorschauhinweis verknüpft. Diese Inhalts- und Semantikkorrekturen gelten auch für B und C.
+
+Alle Varianten erhalten klarere Feldgrenzen. Der gemessene Kontrast der ungefüllten Feldkontur zur angrenzenden Fläche beträgt mindestens 3,37:1. B erhält im dunklen Hero einen hellen Tastaturfokus mit 9,33:1 Kontrast. Das sind gezielte Verbesserungen, keine vollständige WCAG-Zertifizierung.
+
+Der neue Stand von A wurde bei 1440, 800, 390 und 320 px ohne horizontalen Überlauf geprüft. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe sowie lokale Anfragevorbereitung und Invalidierung nach Textänderung funktionieren. Vorher-/Nachher-Aufnahmen des Einstiegs liegen für Desktop (1440 × 1000) und Smartphone (390 × 1000) unter `.preview/screenshots/studio-a-{before|after}-{desktop|mobile}-20261011.jpg`; zusätzliche Abschnittsaufnahmen dokumentieren die mobilen Leistungen und OMF. Die Vorschauaufnahmen sind lokal und werden nicht veröffentlicht.
+
 ## Dateien und gemeinsame Komponenten
 
 - `page.html`: gemeinsames semantisches HTML für Header, Hero, Vertrauensebene, Leistungen, Arbeiten, persönlichen Abschnitt, Ablauf, FAQ und Kontakt.
@@ -60,6 +70,6 @@ OMF bleibt ausdrücklich ein **abgeschlossenes Kundenprojekt**. Aufschlag, Farbf
 - Alle zehn Bilddialoge sowie Impressum/Datenschutz: Öffnen, geladene Bilder, Escape, Schließen und Fokusrückgabe geprüft.
 - Formular: Pflichtfelder, gültige lokale Textvorbereitung, erfolgreiches Kopieren, TXT-Download und Invalidierung eines vorbereiteten Textes nach einer Feldänderung geprüft. Die Testdaten waren fiktiv; kein Versand.
 - Optionale Eule inklusive Comic-/Natural-Auswahl, Ausblenden und Erhalt von `owl`/`owl-style` beim Wechsel zwischen den Varianten geprüft.
-- Statische unabhängige Prüfung: je 56 eindeutige IDs, alle Sprung-/Dialogziele, Formularlabels, ARIA-Verweise und lokalen Ressourcen vorhanden. Die Hauptinhalte sind in A/B/C identisch; dieselben fünf externen Projektlinks bleiben erhalten. Rastergrößen stimmen mit den Dateien überein. JavaScript-Syntax und Git-Diff auf Formatfehler geprüft.
+- Statische unabhängige Prüfung: je 57 eindeutige IDs, alle Sprung-/Dialogziele, Formularlabels, ARIA-Verweise und lokalen Ressourcen vorhanden. Die Hauptinhalte sind in A/B/C identisch; dieselben fünf externen Projektlinks bleiben erhalten. Rastergrößen stimmen mit den Dateien überein. JavaScript-Syntax und Git-Diff auf Formatfehler geprüft.
 
 Die bisherigen Kerninhalte, Referenzen, Projektlinks, Assets und Funktionen bleiben erhalten. Die Arbeit erfolgt zunächst auf `codex/studio-three-variants`; die neuen separaten Pfade können mit dem bestehenden GitHub-Pages-Workflow veröffentlicht werden, ohne `/studio/` zu ersetzen.

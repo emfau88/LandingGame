@@ -67,7 +67,7 @@ cards = []
 for number, project in enumerate(projects, 1):
     cards.append(f'''<article class="project-card" aria-labelledby="{project['id']}-title">
       {device_pair(project)}
-      <div class="project-copy"><p class="project-kind">{project['kind']}</p><div class="project-title-row"><h3 id="{project['id']}-title">{project['name']}</h3><span aria-hidden="true">0{number}</span></div><p>{project['description']}</p><a class="text-link" href="{project['url']}" target="_blank" rel="noopener noreferrer">Signature-Demo ansehen<span class="sr-only"> · {project['name']}, in einem neuen Tab</span></a></div>
+      <div class="project-copy"><p class="project-kind">{project['kind']}</p><div class="project-title-row"><h4 id="{project['id']}-title">{project['name']}</h4><span aria-hidden="true">0{number}</span></div><p>{project['description']}</p><a class="text-link" href="{project['url']}" target="_blank" rel="noopener noreferrer">Signature-Demo ansehen<span class="sr-only"> · {project['name']}, in einem neuen Tab</span></a></div>
     </article>''')
 
 # Reuse FAQ, process and legal content rather than maintaining divergent copies.
