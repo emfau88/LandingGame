@@ -1,0 +1,32 @@
+{
+  "workspace-v1.webp": {
+    "type": "generated-background-plate",
+    "tool": "Built-in ImageGen",
+    "date": "2026-10-11",
+    "size": [1440, 960],
+    "original": "output/imagegen/studio-variants/workspace-background-v1.png",
+    "prompt": "output/imagegen/studio-variants/workspace-prompt.txt",
+    "note": "Illustrative studio atmosphere, not a photograph of the provider's actual office. No person, device or invented website in the generated plate. Laptop, phone and real screenshots are separate HTML layers."
+  },
+  "omf-desktop-v2.webp": {
+    "type": "actual-browser-screenshot",
+    "url": "https://emfau88.github.io/motorrad/",
+    "date": "2026-10-11",
+    "viewport": [1440, 960],
+    "size": [1426, 950],
+    "note": "Actual CUA browser capture of the public OMF homepage, compressed to WebP. Previous Studio screenshots remain unchanged."
+  },
+  "omf-mobile-v2.webp": {
+    "type": "actual-browser-screenshot",
+    "url": "https://emfau88.github.io/motorrad/",
+    "date": "2026-10-11",
+    "viewport": [390, 844],
+    "size": [375, 844],
+    "note": "Actual CUA browser capture of the public OMF mobile homepage, compressed to WebP."
+  },
+  "signature.svg": {
+    "type": "code-native-brand-signature",
+    "size": [160, 56],
+    "note": "Replaceable restrained drawing of the emfau brand name, not an invented personal signature."
+  }
+}

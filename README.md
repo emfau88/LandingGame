@@ -10,6 +10,16 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 ## Online ausprobieren
 
+### Drei zusätzliche Studio-Varianten vergleichen
+
+- **[A · Editorial Premium](https://emfau88.github.io/LandingGame/studio-a/)** – hell, ruhig, viel Weißraum und dezentes Petrol; meine Empfehlung als Hauptvariante.
+- **[B · Modern & prägnant](https://emfau88.github.io/LandingGame/studio-b/)** – dunkler grüner Einstieg und stärker strukturierte Flächen.
+- **[C · Persönliches Studio](https://emfau88.github.io/LandingGame/studio-c/)** – wärmere Sandtöne, weichere Konturen und mehr Workspace-Atmosphäre.
+
+Dieselben Inhalte und Funktionen, drei visuelle Interpretationen. Der gemeinsame modulare Hero zeigt ein Laptop-Mockup und ein Smartphone mit echten aktuellen OMF-Screenshots vor einer eigens erstellten Workspace-Grafik. Leistungen, OMF und alle vier Signature-Konzepte, persönlicher Abschnitt, Zusammenarbeit, FAQ und ehrliche lokale Anfragevorbereitung sind enthalten. Oben lässt sich direkt zwischen A/B/C wechseln. Die bestehende Studio-Version bleibt unverändert.
+
+Die [Dokumentation mit Dateien, Assetquellen, Unterschieden, Platzhaltern und Browserprüfung](emfau-site/src/studio-variants/README.md) erklärt auch den gemeinsamen Generator. Echte Kontaktadresse, Name, Porträt und Nachrichtenversand fehlen weiterhin; die Varianten sind klar als Designvorschau behandelt.
+
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
 Die zusätzliche Seite hat eine eigene Komposition: größere, kontrastreichere Begleittexte, Serifenkontrast nur im Einstieg und Kontaktbereich, Buttons ohne dekorative Pfeile, heller warmer Hintergrund und eine gemeinsame OMF-Präsentation aus Desktopansicht und überlagertem Smartphone im Einstieg. Das statische geometrische emfau-Logo steht neben dem Schriftzug im Kopfbereich. OMF wird kompakt als abgeschlossenes Kundenprojekt vorgestellt; die beiden Websiteansichten bleiben erhalten. Vereinsmitglieder werden nicht als separate Fotomotive gezeigt. Die Texte erklären den konkreten Ablauf von Seitenplanung, Entwurfsabstimmung und Umsetzung; die Ansprache ist durchgehend förmlich. Navigation, vergrößerbare Desktopansicht und lokale Anfragevorbereitung funktionieren auch auf kleinen Bildschirmen. Die bestehenden Farbvarianten bleiben erhalten; der Link **Studio ↗** im Designvergleich führt zum neuen Entwurf.
