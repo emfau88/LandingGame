@@ -1,0 +1,37 @@
+{
+  "workspace-natural.webp": {
+    "type": "generated-illustrative-workplace",
+    "tool": "Built-in ImageGen",
+    "requested_version": "ImageGen 2.5",
+    "verified_model_version": null,
+    "date": "2026-10-12",
+    "size": [1774, 887],
+    "bytes": 68010,
+    "original": "output/imagegen/studio-a2/workspace-natural-original.png",
+    "prompt": "output/imagegen/studio-a2/hero-prompt.txt",
+    "note": "Illustrative natural workplace, not the provider's actual office. The empty generated screen receives the real OMF screenshot as a separate HTML layer. The available built-in tool does not expose model-version selection; version 2.5 is not asserted."
+  },
+  "portrait-placeholder.webp": {
+    "type": "generated-monochrome-illustrative-portrait-placeholder",
+    "tool": "Built-in ImageGen",
+    "requested_version": "ImageGen 2.5",
+    "verified_model_version": null,
+    "date": "2026-10-12",
+    "size": [1122, 1402],
+    "bytes": 269016,
+    "original": "output/imagegen/studio-a2/portrait-placeholder-original.png",
+    "prompt": "output/imagegen/studio-a2/portrait-prompt.txt",
+    "note": "Anonymous charcoal portrait study; not a photograph or representation of the provider. Visible caption and image alt text identify it as a replaceable placeholder."
+  },
+  "signature-mark.svg": {
+    "type": "code-native-freehand-brand-mark",
+    "date": "2026-10-12",
+    "size": [200, 70],
+    "note": "Original loose handwritten-looking abstract mark inspired by the emfau brand. No real person's signature or full name was copied. Replaceable standalone SVG; not an ImageGen asset."
+  },
+  "reused_sources": {
+    "omf": "../studio/sources.json",
+    "concepts": "../projects/sources.json",
+    "note": "All OMF and Signature website images, project URLs, fonts and logo are reused unchanged. No invented screenshots or new customer claims."
+  }
+}

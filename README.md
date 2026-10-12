@@ -15,6 +15,7 @@ Alle verbleibenden Website-Versionen sind hier direkt erreichbar:
 | Version | Vorschau | Stand |
 | --- | --- | --- |
 | **A · Editorial** | **[Gewählte Version öffnen](https://emfau88.github.io/LandingGame/studio-a/)** | Aktuelle A mit fotografischem Einstieg |
+| A 2.0 | [Weiterentwicklung öffnen](https://emfau88.github.io/LandingGame/studio-a2/) | Zusätzlicher Entwurf; A bleibt unverändert |
 | A · Bisheriges Editorial | [Bisheriges A öffnen](https://emfau88.github.io/LandingGame/studio-a-editorial/) | Vorherige A zum Vergleich |
 | Ursprüngliches Studio | [Studio öffnen](https://emfau88.github.io/LandingGame/studio/) | Früherer eigenständiger Studio-Entwurf |
 | Clean Grün | [Grüne Version öffnen](https://emfau88.github.io/LandingGame/?design=clean) | Farbvariante der ursprünglichen Landingpage |
@@ -34,6 +35,14 @@ A wurde am **12. Oktober 2026** anhand der bereitgestellten Layoutreferenzen neu
 Der neue A-Stand wurde statisch auf Ressourcen, Sprungziele, Dialoge, Formularverdrahtung und responsive CSS-Geometrie geprüft. Eine neue gerenderte Browserprüfung war wegen einer Browser-Sicherheitsblockade nicht möglich. Frühere Browserprüfungen und Screenshots beziehen sich auf die vorherige A-Version.
 
 Die [Dokumentation mit Dateien, Assetquellen, Platzhaltern und Prüfstand](emfau-site/src/studio-variants/README.md) erklärt auch den Generator. Echte Kontaktadresse, Name, Porträt und Nachrichtenversand fehlen weiterhin; die Seite bleibt als Designvorschau behandelt.
+
+### Zusätzliche Weiterentwicklung A 2.0
+
+**[A 2.0 ausprobieren](https://emfau88.github.io/LandingGame/studio-a2/)** · **[A unverändert vergleichen](https://emfau88.github.io/LandingGame/studio-a/)**
+
+A 2.0 entwickelt A in eigenen Dateien weiter: natürlicheres Arbeitsplatzmotiv mit echter OMF-Ansicht im Laptop, offene Leistungsspalten ohne Icons oder Häkchenlisten und eine kuratierte Projektfolge. OMF bleibt das zentrale reale Kundenprojekt; Werkform, Lindenwirt und Aufschlag erhalten unterschiedliche Bildgewichte, Farbform bleibt als ergänzendes Konzept erreichbar. Ein konkreterer persönlicher Text, ein klar gekennzeichneter Schwarzweiß-Porträtplatzhalter und eine freihändige Signaturmarke ergänzen den Entwurf. Alle zehn Desktop-/Smartphone-Bildvergrößerungen und Demo-Links bleiben erhalten.
+
+Die [A-2.0-Dokumentation](emfau-site/src/studio-a2/README.md) beschreibt neue Dateien, Bildquellen, austauschbare Platzhalter und Prüfstand. Neue Bilder stammen aus Built-in ImageGen; eine Modellversion „2.5“ lässt sich über das verfügbare Werkzeug nicht auswählen oder verifizieren. Die aktuelle A, ihr bisheriger Editorial-Stand und deren Dateien werden für A 2.0 nicht verändert.
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
