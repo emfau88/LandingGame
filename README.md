@@ -25,6 +25,8 @@ Alle verbleibenden Website-Versionen sind hier direkt erreichbar:
 
 Die Studio-Entwürfe B · Prägnant und C · Persönlich wurden auf Wunsch verworfen.
 
+**A 2.1 · Final Candidate** ist zusätzlich oben in den Vergleichslinks aller verbleibenden Versionen erreichbar, einschließlich der drei Farbvarianten.
+
 ### Gewählte Studio-Version A · Editorial
 
 **[A · Editorial ausprobieren](https://emfau88.github.io/LandingGame/studio-a/)** – heller fotografischer Einstieg, kompakte Leistungen und Projektkarten, dezentes Petrol und dunkler Footer.

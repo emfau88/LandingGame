@@ -264,7 +264,11 @@ html[data-design="blue"] .contact-dot { background: #2452e8; }
   .design-options button { padding-inline: 9px; }
   .design-options .studio-link { padding-inline: 9px; }
 }
-@media (max-width: 380px) {
+@media (max-width: 520px) {
   .design-toolbar-inner > span:first-child { display: none; }
   .design-options { margin-left: 0; }
+}
+@media (max-width: 380px) {
+  .design-options button,
+  .design-options .studio-link { padding-inline: 7px; }
 }

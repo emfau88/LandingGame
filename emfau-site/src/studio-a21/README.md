@@ -4,6 +4,8 @@
 
 Zusätzlicher Entwurf auf Branch `codex/studio-a21`, ausgehend von Commit `4769a67`. Die vollständige A 2.0 bleibt als Vergleich erhalten. Ihre Quellen, Seite, Styles und Assets werden nicht verändert; auch alle übrigen bisherigen Seitendateien bleiben erhalten. Nur die Repository-README erhält zusätzliche Links und Dokumentation.
 
+Nach der Veröffentlichung wurde auf ausdrücklichen Wunsch ausschließlich ein A-2.1-Link in die obere Vergleichsnavigation der bisherigen Versionen aufgenommen, auch in A 2.0. Deren Gestaltung, Inhalte und Assets bleiben auf dem bisherigen Stand. Der unten dokumentierte Bytevergleich bezieht sich auf die ursprüngliche A-2.1-Veröffentlichung in Commit `cc9593f`.
+
 ## Gezielte Weiterentwicklung
 
 - Der natürliche Arbeitsplatz, die separat eingebundene echte OMF-Website, Manrope und die bestehende Petrol-/Warmweiß-Farbwelt bleiben erhalten. Kein neues Workspace-Bild oder erfundenes Porträt wurde erzeugt.
