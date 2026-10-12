@@ -1,87 +1,61 @@
-# Drei Studio-Varianten
+# Studio A · Editorial
 
-Alle drei Seiten verwenden dieselben Projektquellen und Interaktionen. A besitzt seit dem 12. Oktober 2026 eine eigene, kompaktere Komposition; B und C verwenden weiterhin das gemeinsame statische Template. Die bisherige Studio-Seite unter `/studio/` und die Farbvarianten der Startseite sind unverändert.
+A ist die gewählte Studio-Version. B · Prägnant und C · Persönlich wurden auf Wunsch verworfen: Ihre veröffentlichten HTML-Dateien, Navigationslinks, Generator-Konfiguration und spezifischen aktiven Styles sind entfernt. Frühere Stände lassen sich aus der Git-Historie wiederherstellen. Die Farbvarianten der Startseite und das ursprüngliche `/studio/` bleiben erhalten.
 
-| Variante | Online | Gestaltung |
-| --- | --- | --- |
-| A · Regionales Studio | [Studio A](https://emfau88.github.io/LandingGame/studio-a/) | Helle fotografische Szene, kompakte Leistungskarten und Projekte, dezentes Petrol und dunkler Footer. |
-| B · Modern & prägnant | [Studio B](https://emfau88.github.io/LandingGame/studio-b/) | Dunkelgrüner Hero, stärkere Kontraste, strukturierte Leistungs- und Projektkarten, klar gefasstes Kontaktformular. |
-| C · Persönliches Studio | [Studio C](https://emfau88.github.io/LandingGame/studio-c/) | Warme Sandtöne, Oliv, taktile Workspace-Szene, weichere Bildkonturen und dezente Markensignatur. |
+- [Gewählte A-Version öffnen](https://emfau88.github.io/LandingGame/studio-a/)
+- [Bisheriges Editorial-A vergleichen](https://emfau88.github.io/LandingGame/studio-a-editorial/)
 
-Die neue A folgt den bereitgestellten regionalen Freelancer-Referenzen. B ist die markantere Alternative, C die wärmere. Alle verwenden die vorhandene lokal ausgelieferte Manrope. [Das bisherige Editorial-A](https://emfau88.github.io/LandingGame/studio-a-editorial/) bleibt zum direkten Vergleich erhalten.
+## Gestaltung und Inhalte
 
-## Fotografische Weiterentwicklung von A · 12. Oktober 2026
+A folgt den bereitgestellten regionalen Freelancer-Referenzen: heller fotografischer Einstieg mit echtem OMF-Screenshot im Laptop und echter Smartphoneansicht, drei kompakte Leistungskarten, Projektpräsentation, persönlicher Abschnitt mit Werten und dunkler Petrol-Footer. Die Buttons verzichten auf dekorative Pfeile. Die Auswahl von A verändert ihre Gestaltung nicht.
 
-Der Einstieg verbindet eine helle Fotoszene mit dem echten OMF-Screenshot im Laptop und der echten Smartphoneansicht. Die Bilder bleiben separat anklickbar. Es folgen drei Leistungskarten mit konkreten Merkmalen, OMF als abgeschlossenes Kundenprojekt, vier klar gekennzeichnete Signature-Konzepte und ein kompakter persönlicher Abschnitt mit Werten. Ein eigenes Porträt wird weiterhin ehrlich als fehlend gekennzeichnet. Ablauf, FAQ und lokale Anfragevorbereitung bleiben erhalten. Der dunkle Petrol-Footer schließt die Seite ab; Buttons erhalten keine dekorativen Pfeile.
+OMF bleibt ausdrücklich ein abgeschlossenes Kundenprojekt. Aufschlag, Farbform, Werkform und Lindenwirt bleiben klar als fiktive Signature-Konzepte gekennzeichnet. Alle zehn Websiteansichten sind vergrößerbar. Ablauf, FAQ, förmliche Ansprache und lokale Anfragevorbereitung bleiben erhalten. Keine Apps-/Games-Sektion.
 
-Die bisherige A-Version ist unter `/studio-a-editorial/` eingefroren. Sie verwendet eine Kopie der bisherigen Gestaltung in `variants-editorial.css` und dieselben bestehenden Skripte und Bildquellen. B, C und das ursprüngliche Studio haben in dieser Weiterentwicklung keine Inhalts- oder Gestaltungsänderungen erhalten.
+Das bisherige A unter `/studio-a-editorial/` verwendet seine erhaltene CSS-Kopie `variants-editorial.css`. Lediglich seine Navigation wurde um die verworfenen Designs bereinigt. Diese Vergleichsseite wird vom Generator nicht überschrieben.
 
-Die neue Komposition wurde statisch auf eindeutige IDs, Formularlabels, ARIA-Beziehungen, Ressourcen, Dialog- und Sprungziele sowie responsive CSS-Geometrie geprüft. JavaScript-Syntax und Git-Diff wurden kontrolliert. **Eine neue gerenderte Browserprüfung und neue Website-Screenshots waren aufgrund einer Browser-Sicherheitsblockade nicht möglich.** Die im folgenden historischen Abschnitt beschriebenen Browserprüfungen gelten für A vor dieser Weiterentwicklung und für die unveränderten B/C-Versionen.
+## Dateien
 
-## Weiterentwicklung von A · 11. Oktober 2026
+- `page-a.html`: semantisches Template der aktuellen A-Version.
+- `build.py`: rendert ausschließlich `/studio-a/index.html`. Liest die vier bestehenden Signature-Projekte, ihre Bilder und Demo-URLs sowie OMF-Link, Ablauf, FAQ und Rechtshinweise aus `dist/studio/index.html`.
+- `settings.json`: Marke, Region, die gewählte Variante A und austauschbare Kontakt-/Porträtangaben. Der Generator akzeptiert nur A.
+- `../../dist/studio-variants/variants.css`: allgemeine Komponenten und grundlegende A-Gestaltung; die verworfenen B/C-Styles wurden entfernt.
+- `../../dist/studio-variants/studio-a.css`: fotografische A-Komposition, begrenzt auf `.studio-a-photo`.
+- `../../dist/studio-variants/variants.js`: mobile Navigation, Bild-/Rechtshinweisdialoge, Jahreszahl, lokale Anfragevorbereitung mit Kopieren/Download und Erhalt optionaler Eulenparameter und Abschnittsanker bei den verbliebenen Versionslinks.
+- `../../dist/studio-a-editorial/index.html` und `variants-editorial.css`: erhaltene vorherige A-Version.
+- `../../dist/assets/studio/`: Bildquellen und `sources.json` mit Herkunftsangaben.
 
-A behält ihre ruhige Gestaltung, erhält aber größere Begleittexte und Bildunterschriften, eine Vorteilsleiste ohne dekorative Nummern und mehr Textbreite bei den mobilen Leistungen. Der mobile Einstieg wird etwas kompakter. Die vollständige OMF-Beschreibung bleibt auch auf Tabletbreite sichtbar.
-
-Die gemeinsamen Texte benennen die persönliche Rolle bei Planung, Gestaltung und Entwicklung, unterscheiden die drei Leistungen konkreter und beschreiben OMF als umgesetzte Vereinswebsite mit ihren wichtigsten Inhalten. Konzeptprojekte bleiben ausdrücklich fiktiv. Die Vertrauensebene ist eine echte Liste, die vier Konzeptprojekte stehen als H4 unter ihrer H3-Gruppenüberschrift, und das Formular ist mit Überschrift und Vorschauhinweis verknüpft. Diese Inhalts- und Semantikkorrekturen gelten auch für B und C.
-
-Alle Varianten erhalten klarere Feldgrenzen. Der gemessene Kontrast der ungefüllten Feldkontur zur angrenzenden Fläche beträgt mindestens 3,37:1. B erhält im dunklen Hero einen hellen Tastaturfokus mit 9,33:1 Kontrast. Das sind gezielte Verbesserungen, keine vollständige WCAG-Zertifizierung.
-
-Der neue Stand von A wurde bei 1440, 800, 390 und 320 px ohne horizontalen Überlauf geprüft. Mobile Navigation, Bilddialog mit Escape und Fokusrückgabe sowie lokale Anfragevorbereitung und Invalidierung nach Textänderung funktionieren. Vorher-/Nachher-Aufnahmen des Einstiegs liegen für Desktop (1440 × 1000) und Smartphone (390 × 1000) unter `.preview/screenshots/studio-a-{before|after}-{desktop|mobile}-20261011.jpg`; zusätzliche Abschnittsaufnahmen dokumentieren die mobilen Leistungen und OMF. Die Vorschauaufnahmen sind lokal und werden nicht veröffentlicht.
-
-## Dateien und gemeinsame Komponenten
-
-- `page.html`: gemeinsames semantisches HTML für B/C mit Header, Hero, Vertrauensebene, Leistungen, Arbeiten, persönlichem Abschnitt, Ablauf, FAQ und Kontakt.
-- `page-a.html`: neue fotografische Komposition von A mit denselben Projekt- und Dialogquellen sowie derselben Formularlogik.
-- `build.py`: rendert `/studio-a/index.html`, `/studio-b/index.html` und `/studio-c/index.html`. Liest die vier vorhandenen Signature-Projekte mit Kategorie, Beschreibung, Bildquellen und Demo-URLs sowie den OMF-Link, die bisherigen Prozess-/FAQ-Inhalte und Rechtshinweise direkt aus `dist/studio/index.html`. Kein weiterer Bestand an Demo-Websites und keine drei unabhängig gepflegten Inhaltskopien.
-- `settings.json`: gemeinsame Marke, Region und austauschbare Angaben für Kontakt, Namen und Porträt. Die drei Designbezeichnungen sind hier zentral hinterlegt.
-- `../../dist/studio-variants/variants.css`: gemeinsame Komponenten und CSS-Tokens; Unterschiede über `html[data-design="a|b|c"]`. Responsive Layouts für Desktop, Tablet und Smartphone.
-- `../../dist/studio-variants/studio-a.css`: nur für die neue A geladene, über `.studio-a-photo` begrenzte Gestaltung. B/C und das bisherige Studio werden davon nicht beeinflusst.
-- `../../dist/studio-a-editorial/index.html` und `variants-editorial.css`: erhaltene vorherige A-Version; wird vom Generator nicht überschrieben.
-- `../../dist/studio-variants/variants.js`: Navigation, Bild-/Rechtshinweisdialoge, Jahr, lokale Anfragevorbereitung mit Kopieren/Download und Variantenwechsel einschließlich optionaler Eulenparameter und Abschnittsanker.
-- `../../dist/assets/studio/`: die neuen gemeinsamen Assets und `sources.json` mit ihrer Herkunft.
-
-Neu rendern, vom Repository-Hauptordner:
+Vom Repository-Hauptordner neu rendern:
 
 ```powershell
 python emfau-site/src/studio-variants/build.py
 ```
 
-Die generierten HTML-Dateien sind eingecheckt. GitHub Pages und die lokale Vorschau benötigen weder Python noch einen Build-Schritt. Keine neue Framework- oder Paketabhängigkeit.
+Das generierte HTML ist eingecheckt. GitHub Pages und die lokale Vorschau benötigen weder Python noch einen Build-Schritt. Keine zusätzliche Framework- oder Paketabhängigkeit.
 
-## Hero und Assets
+## Hero und Assetquellen
 
-In B/C und dem archivierten A besteht der Hero aus separatem Workspace-Hintergrund, Desk-/Schattenebene, Laptopgehäuse und Fuß, echtem OMF-Screenshot sowie einem Smartphone mit eigener echter Mobilansicht. Die neue A verwendet eine zusammenhängende Fotoszene mit leerem Laptopdisplay; der echte OMF-Screenshot liegt als separates HTML-Element auf diesem Display. Die Smartphoneansicht bleibt ebenfalls separat. Alle Websiteansichten sind vergrößerbar.
+Die aktuelle A verwendet eine zusammenhängende Fotoszene mit leerem Laptopdisplay. Der echte OMF-Screenshot liegt als separates HTML-Element auf dem Display; die Smartphoneansicht ist ebenfalls separat. Beide Websiteansichten bleiben anklickbar. Im bisherigen Editorial-A bestehen Hintergrund, Laptopgehäuse, Fuß und Websitebilder aus separaten Ebenen.
 
-Neu erstellt:
+- `workspace-hero-a.webp`: Built-in ImageGen, 12. Oktober 2026, 1942 × 809, ca. 61 KB. Illustrative Atmosphäre, kein behauptetes Foto des tatsächlichen Büros. Original und vollständiger Prompt liegen unter `output/imagegen/studio-reference-a/`.
+- `workspace-v1.webp`: Built-in ImageGen, 11. Oktober 2026, 1440 × 960, ca. 64 KB. Hintergrund für die bisherige A-Version; Original und Prompt unter `output/imagegen/studio-variants/`.
+- `omf-desktop-v2.webp` und `omf-mobile-v2.webp`: echte Browseraufnahmen der öffentlichen OMF-Website vom 11. Oktober 2026, ca. 100 und 54 KB. Frühere OMF-Bilder bleiben für das ursprüngliche Studio erhalten.
+- `signature.svg`: kleine Zeichnung des Markennamens emfau, keine erfundene Unterschrift einer realen Person.
 
-- `dist/assets/studio/workspace-hero-a.webp`: mit **Built-in ImageGen** erzeugte helle Szene mit leerem Laptopdisplay, 1942 × 809, ca. 61 KB. Illustrative Atmosphäre, kein behauptetes Foto des tatsächlichen Büros. Original und vollständiger Prompt liegen unter `output/imagegen/studio-reference-a/`.
-- `dist/assets/studio/workspace-v1.webp`: optimierte, mit dem **Built-in ImageGen** erzeugte Hintergrundgrafik, 1440 × 960, ca. 64 KB. Eine illustrative Studioatmosphäre, kein behauptetes Foto des tatsächlichen Büros. Original und vollständiger Prompt liegen unter `output/imagegen/studio-variants/` im Repository.
-- `dist/assets/studio/omf-desktop-v2.webp` und `omf-mobile-v2.webp`: neue echte Browseraufnahmen der öffentlichen OMF-Website vom **11. Oktober 2026**. Gemeinsame Bilder für alle drei Varianten, ca. 100 und 54 KB. Die früheren OMF-Bilder bleiben für das alte Studio erhalten.
-- `dist/assets/studio/signature.svg`: eigenes, kleines und austauschbares SVG mit dem Markennamen emfau. Keine erfundene Unterschrift einer realen Person.
+Unverändert wiederverwendet werden die lokale Manrope, das geometrische emfau-Logo, alle acht Signature-Projektbilder samt Quellenmanifest und die bestehenden Eulengrafiken mit `studio/owl.js` und `studio/owl.css`. Die Eule ist standardmäßig ausgeschaltet; `?owl=on` und `?owl-style=natural` bleiben verfügbar.
 
-Wiederverwendet:
+## Platzhalter und Kontakt
 
-- `manrope.woff2` und das originale geometrische `emfau-mark-dark.svg`.
-- Alle acht Desktop-/Mobile-WebP-Bilder der vier Signature-Konzepte aus `assets/projects/` samt bisherigen URLs und Quellenmanifest.
-- Die vorhandenen Eulengrafiken, `studio/owl.js` und `studio/owl.css`. Die Eule ist standardmäßig aus und lädt ihre Rastergrafiken nur beim Einschalten. `?owl=on` und `?owl-style=natural` bleiben verfügbar.
-- Bestehende FAQ, Prozessschritte und Vorschau-Rechtshinweise.
+- Ein echtes Porträt fehlt: sichtbarer, beschrifteter Platzhalter. Eintragen über `portrait` in `settings.json`, als lokaler Bildpfad relativ zu `/studio-a/`. Das manuell erhaltene Editorial-A wird dadurch nicht automatisch aktualisiert.
+- Name und geschäftliche E-Mail-Adresse sind nicht verifiziert: `contact_name` und `contact_email` bleiben `null`. Keine erfundene Person oder Kontaktadresse. Nach Eintragen einer echten Adresse erzeugt der Generator einen direkten E-Mail-Link für die aktuelle A.
+- Kein Versanddienst eingerichtet: „Nachricht vorbereiten“ prüft Pflichtfelder und erzeugt Text ausschließlich lokal. Kopieren und TXT-Download sind möglich; es wird nichts versendet. Ohne JavaScript bleibt der Submit-Button deaktiviert, mit erklärendem Hinweis.
+- Anbieterangaben und endgültige Datenschutzerklärung fehlen. Die Vorschau bleibt `noindex,nofollow`.
 
-OMF bleibt ausdrücklich ein **abgeschlossenes Kundenprojekt**. Aufschlag, Farbform, Werkform und Lindenwirt bleiben eindeutig als **fiktive Konzepte** bezeichnet. Keine Apps-/Games-Sektion.
+## Prüfstand
 
-## Echte Platzhalter und Kontakt
+Die aktuelle fotografische A-Komposition wurde am 12. Oktober 2026 statisch auf IDs, Labels, ARIA-Beziehungen, Ressourcen, Dialog-/Sprungziele, Formularverdrahtung und responsive CSS-Geometrie geprüft. JavaScript-Syntax und Git-Diff wurden kontrolliert. Veröffentlichte HTML-, CSS- und Bilddateien waren per HTTP erreichbar. Eine gerenderte Browserprüfung dieses Layouts war wegen einer Browser-Sicherheitsblockade nicht möglich.
 
-- Kein echtes Porträt vorhanden: sichtbarer, klar beschrifteter Porträtslot. Ersetzt werden kann er zentral über `portrait` in `settings.json` (lokaler Bildpfad relativ zu den drei Seiten).
-- Name und geschäftliche E-Mail-Adresse sind nicht verifiziert: `contact_name` und `contact_email` bleiben `null`. Keine erfundene Person und kein zufälliges `mailto:`. Nach Eintragen einer echten Adresse entsteht automatisch ein direkter E-Mail-Link für alle Varianten.
-- Kein Versanddienst eingerichtet: Der CTA lautet deshalb **„Nachricht vorbereiten“**. Pflichtfelder werden geprüft, der Text entsteht nur lokal und kann kopiert oder heruntergeladen werden. Es gibt weder Serverversand noch eine falsche Zustellbestätigung. Der Submit-Button wird erst nach Registrierung dieser lokalen Logik aktiviert; ohne JavaScript bleibt er deaktiviert und ein Hinweis erklärt den Zustand.
-- Anbieterangaben und endgültige Datenschutzerklärung fehlen wie bisher. Die Vorschau bleibt `noindex,nofollow`.
+Die Bereinigung auf A prüft zusätzlich, dass der Generator nur A erzeugt, keine Links zu den verworfenen Seiten verbleiben und die allgemeinen/A-Styles unverändert weiterwirken. Die inhaltliche Gestaltung, Projekte und Interaktionen werden dabei nicht geändert.
 
-## Historische Browserprüfung · 11. Oktober 2026
+Die historischen Browserprüfungen vom 11. Oktober 2026 gelten für das bisherige Editorial-A: 1440, 800, 390 und 320 px ohne horizontalen Überlauf; mobile Navigation, alle zehn Bilddialoge sowie Impressum/Datenschutz mit Escape und Fokusrückgabe; Formularvalidierung, lokale Textvorbereitung, Kopieren, Download und Invalidierung nach Textänderung; optionale Eule und Auswahl beider Zeichnungen. Vorher-/Nachher-Aufnahmen liegen lokal unter `.preview/screenshots/studio-a-{before|after}-{desktop|mobile}-20261011.jpg` und werden nicht veröffentlicht.
 
-- Alle drei Varianten im CUA-Browser bei **1440, 800, 390 und 320 px**. Dokumentbreite und Inhaltsgrenzen ohne horizontalen Überlauf. Screenshots für alle zwölf Kombinationen lokal unter `.preview/screenshots/` (nicht veröffentlicht).
-- Zusätzliche visuelle Kontrolle von Leistungsdarstellung, Projektansichten, persönlichem Abschnitt, Ablauf und Kontakt. Mobile Navigation öffnet, schließt und folgt Abschnittsankern.
-- Alle zehn Bilddialoge sowie Impressum/Datenschutz: Öffnen, geladene Bilder, Escape, Schließen und Fokusrückgabe geprüft.
-- Formular: Pflichtfelder, gültige lokale Textvorbereitung, erfolgreiches Kopieren, TXT-Download und Invalidierung eines vorbereiteten Textes nach einer Feldänderung geprüft. Die Testdaten waren fiktiv; kein Versand.
-- Optionale Eule inklusive Comic-/Natural-Auswahl, Ausblenden und Erhalt von `owl`/`owl-style` beim Wechsel zwischen den Varianten geprüft.
-- Statische unabhängige Prüfung: je 57 eindeutige IDs, alle Sprung-/Dialogziele, Formularlabels, ARIA-Verweise und lokalen Ressourcen vorhanden. Die Hauptinhalte sind in A/B/C identisch; dieselben fünf externen Projektlinks bleiben erhalten. Rastergrößen stimmen mit den Dateien überein. JavaScript-Syntax und Git-Diff auf Formatfehler geprüft.
-
-Die bisherigen Kerninhalte, Referenzen, Projektlinks, Assets und Funktionen bleiben erhalten. Der bestehende GitHub-Pages-Workflow veröffentlicht die separaten Pfade bei einem Push auf `main`, ohne `/studio/` zu ersetzen.
+Der bestehende GitHub-Pages-Workflow veröffentlicht `emfau-site/dist` nach einem Push auf `main`, ohne das ursprüngliche `/studio/` zu ersetzen.

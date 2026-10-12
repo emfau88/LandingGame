@@ -5,8 +5,6 @@
   "contact_name": null,
   "portrait": null,
   "variants": [
-    {"id": "a", "label": "Editorial Premium", "short": "Editorial", "theme_color": "#faf9f6"},
-    {"id": "b", "label": "Modern & prägnant", "short": "Prägnant", "theme_color": "#f5f6f2"},
-    {"id": "c", "label": "Persönliches Studio", "short": "Persönlich", "theme_color": "#f6f1e9"}
+    {"id": "a", "label": "Editorial Premium", "short": "Editorial", "theme_color": "#faf9f6"}
   ]
 }

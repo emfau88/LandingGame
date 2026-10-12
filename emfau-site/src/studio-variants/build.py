@@ -1,4 +1,4 @@
-"""Render three static pages from variant templates and existing Studio projects.
+"""Render Studio A from its template and existing Studio projects.
 
 Run from any directory: python emfau-site/src/studio-variants/build.py
 No dependencies or runtime framework. Existing /studio/ is only read.
@@ -92,25 +92,21 @@ if portrait:
 else:
     portrait_markup = '''<div class="portrait-placeholder"><img src="../assets/emfau-mark-dark.svg" alt="" width="120" height="92"><p>Hier bekommt das Studio<br>ein persönliches Gesicht.</p><span>Austauschbarer Platz für mein Porträt</span></div>'''
 
-templates = {
-    "a": Template((SOURCE / "page-a.html").read_text(encoding="utf-8")),
-    "default": Template((SOURCE / "page.html").read_text(encoding="utf-8"))
-}
-for variant in settings["variants"]:
-    nav = []
-    for other in settings["variants"]:
-        current = ' aria-current="page"' if other["id"] == variant["id"] else ""
-        nav.append(f'<a href="../studio-{other["id"]}/" data-variant-link{current}><span>{other["id"].upper()}</span> {other["short"]}</a>')
-    template = templates["a" if variant["id"] == "a" else "default"]
-    html = template.substitute(
-        variant=variant["id"], variant_name=variant["label"], theme_color=variant["theme_color"],
-        variant_nav="".join(nav), brand=escape(settings["brand"]), region=escape(settings["region"]),
-        projects="\n".join(cards), omf_pair=device_pair(omf), omf_url=omf_url,
-        faq=faq, process=process, legal=legal, direct_contact=direct_contact,
-        contact_name=name, portrait=portrait_markup,
-        image_dialogs="\n".join(image_dialogs(project) for project in [omf, *projects])
-    )
-    target = DIST / f"studio-{variant['id']}"
-    target.mkdir(exist_ok=True)
-    (target / "index.html").write_text(html, encoding="utf-8", newline="\n")
-    print(f"Rendered {target.relative_to(DIST)}/index.html")
+template = Template((SOURCE / "page-a.html").read_text(encoding="utf-8"))
+variants = settings["variants"]
+if len(variants) != 1 or variants[0]["id"] != "a":
+    raise ValueError("Expected Studio A as the only rendered design")
+variant = variants[0]
+nav = f'<a href="../studio-a/" data-variant-link aria-current="page"><span>A</span> {variant["short"]}</a>'
+html = template.substitute(
+    variant=variant["id"], variant_name=variant["label"], theme_color=variant["theme_color"],
+    variant_nav=nav, brand=escape(settings["brand"]), region=escape(settings["region"]),
+    projects="\n".join(cards), omf_pair=device_pair(omf), omf_url=omf_url,
+    faq=faq, process=process, legal=legal, direct_contact=direct_contact,
+    contact_name=name, portrait=portrait_markup,
+    image_dialogs="\n".join(image_dialogs(project) for project in [omf, *projects])
+)
+target = DIST / "studio-a"
+target.mkdir(exist_ok=True)
+(target / "index.html").write_text(html, encoding="utf-8", newline="\n")
+print(f"Rendered {target.relative_to(DIST)}/index.html")
