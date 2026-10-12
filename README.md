@@ -12,15 +12,17 @@ Oben auf der Seite schaltet **Design testen → Grün / Blau / Dark** zwischen d
 
 ### Drei zusätzliche Studio-Varianten vergleichen
 
-- **[A · Editorial Premium](https://emfau88.github.io/LandingGame/studio-a/)** – hell, ruhig, viel Weißraum und dezentes Petrol; meine Empfehlung als Hauptvariante.
+- **[A · weiterentwickeltes regionales Studio](https://emfau88.github.io/LandingGame/studio-a/)** – heller fotografischer Einstieg, kompakte Leistungen und Projektkarten, dezentes Petrol und dunkler Footer.
 - **[B · Modern & prägnant](https://emfau88.github.io/LandingGame/studio-b/)** – dunkler grüner Einstieg und stärker strukturierte Flächen.
 - **[C · Persönliches Studio](https://emfau88.github.io/LandingGame/studio-c/)** – wärmere Sandtöne, weichere Konturen und mehr Workspace-Atmosphäre.
 
-Dieselben Inhalte und Funktionen, drei visuelle Interpretationen. Der gemeinsame modulare Hero zeigt ein Laptop-Mockup und ein Smartphone mit echten aktuellen OMF-Screenshots vor einer eigens erstellten Workspace-Grafik. Leistungen, OMF und alle vier Signature-Konzepte, persönlicher Abschnitt, Zusammenarbeit, FAQ und ehrliche lokale Anfragevorbereitung sind enthalten. Oben lässt sich direkt zwischen A/B/C wechseln. Die bestehende Studio-Version bleibt unverändert.
+Dieselben Projektquellen und Funktionen, drei visuelle Interpretationen. Die Einstiege zeigen ein Laptop-Mockup und ein Smartphone mit echten aktuellen OMF-Screenshots vor eigens erstellten Workspace-Grafiken. Leistungen, OMF und alle vier Signature-Konzepte, persönlicher Abschnitt, Zusammenarbeit, FAQ und ehrliche lokale Anfragevorbereitung sind enthalten. Oben lässt sich direkt zwischen A/B/C wechseln. Die bestehende Studio-Version bleibt unverändert.
 
-A wurde mit größeren Detailtexten, einer ruhigeren Vorteilsleiste und lesbareren mobilen Leistungen weiterentwickelt. Die Texte beschreiben die persönliche Arbeit und das abgeschlossene OMF-Projekt konkreter; gemeinsame HTML-Semantik und Formularkontraste wurden ebenfalls verbessert.
+A wurde am **12. Oktober 2026** anhand der bereitgestellten Layoutreferenzen neu aufgebaut: zusammenhängende Fotoszene mit echtem OMF-Screenshot im Laptop, drei Leistungskarten mit konkreten Merkmalen, kompakte Projektpräsentation und persönlicher Abschnitt mit Werten. Die Buttons verzichten weiterhin auf dekorative Pfeile. **[Das bisherige A bleibt separat erreichbar](https://emfau88.github.io/LandingGame/studio-a-editorial/)** und ist direkt mit der neuen Version verknüpft. B, C und das ursprüngliche Studio bleiben unverändert.
 
-Die [Dokumentation mit Dateien, Assetquellen, Unterschieden, Platzhaltern und Browserprüfung](emfau-site/src/studio-variants/README.md) erklärt auch den gemeinsamen Generator. Echte Kontaktadresse, Name, Porträt und Nachrichtenversand fehlen weiterhin; die Varianten sind klar als Designvorschau behandelt.
+Der neue A-Stand wurde statisch auf Ressourcen, Sprungziele, Dialoge, Formularverdrahtung und responsive CSS-Geometrie geprüft. Eine neue gerenderte Browserprüfung war wegen einer Browser-Sicherheitsblockade nicht möglich. Frühere Browserprüfungen und Screenshots beziehen sich auf die vorherige A-Version.
+
+Die [Dokumentation mit Dateien, Assetquellen, Unterschieden, Platzhaltern und Prüfstand](emfau-site/src/studio-variants/README.md) erklärt auch den gemeinsamen Generator. Echte Kontaktadresse, Name, Porträt und Nachrichtenversand fehlen weiterhin; die Varianten sind klar als Designvorschau behandelt.
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 

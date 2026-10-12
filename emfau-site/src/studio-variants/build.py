@@ -1,4 +1,4 @@
-"""Render three static pages from one template and the existing Studio projects.
+"""Render three static pages from variant templates and existing Studio projects.
 
 Run from any directory: python emfau-site/src/studio-variants/build.py
 No dependencies or runtime framework. Existing /studio/ is only read.
@@ -92,12 +92,16 @@ if portrait:
 else:
     portrait_markup = '''<div class="portrait-placeholder"><img src="../assets/emfau-mark-dark.svg" alt="" width="120" height="92"><p>Hier bekommt das Studio<br>ein persönliches Gesicht.</p><span>Austauschbarer Platz für mein Porträt</span></div>'''
 
-template = Template((SOURCE / "page.html").read_text(encoding="utf-8"))
+templates = {
+    "a": Template((SOURCE / "page-a.html").read_text(encoding="utf-8")),
+    "default": Template((SOURCE / "page.html").read_text(encoding="utf-8"))
+}
 for variant in settings["variants"]:
     nav = []
     for other in settings["variants"]:
         current = ' aria-current="page"' if other["id"] == variant["id"] else ""
         nav.append(f'<a href="../studio-{other["id"]}/" data-variant-link{current}><span>{other["id"].upper()}</span> {other["short"]}</a>')
+    template = templates["a" if variant["id"] == "a" else "default"]
     html = template.substitute(
         variant=variant["id"], variant_name=variant["label"], theme_color=variant["theme_color"],
         variant_nav="".join(nav), brand=escape(settings["brand"]), region=escape(settings["region"]),

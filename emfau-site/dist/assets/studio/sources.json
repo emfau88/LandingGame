@@ -1,4 +1,13 @@
 {
+  "workspace-hero-a.webp": {
+    "type": "generated-workspace-with-empty-laptop-screen",
+    "tool": "Built-in ImageGen",
+    "date": "2026-10-12",
+    "size": [1942, 809],
+    "original": "output/imagegen/studio-reference-a/workspace-hero-a-original.png",
+    "prompt": "output/imagegen/studio-reference-a/hero-prompt.txt",
+    "note": "Illustrative studio scene, not a photograph of the provider's actual office. The generated laptop screen is empty. The real OMF desktop screenshot and smartphone preview are independent, enlargeable HTML layers; no generated website or person is shown."
+  },
   "workspace-v1.webp": {
     "type": "generated-background-plate",
     "tool": "Built-in ImageGen",
