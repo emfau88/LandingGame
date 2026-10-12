@@ -1,0 +1,17 @@
+{
+  "signature-mark.svg": {
+    "type": "code-native-abstract-brand-gesture",
+    "date": "2026-10-12",
+    "derived_from": "../studio-a2/signature-mark.svg",
+    "size": [200, 70],
+    "note": "Separate refinement of the A2 brand gesture: small pressure/opacity differences, interrupted strokes and a shorter irregular baseline. No real person's signature copied or represented."
+  },
+  "reused_assets": {
+    "workspace": "../studio-a2/workspace-natural.webp",
+    "portrait_placeholder": "../studio-a2/portrait-placeholder.webp",
+    "source_manifest": "../studio-a2/sources.json",
+    "omf_source_manifest": "../studio/sources.json",
+    "concept_source_manifest": "../projects/sources.json",
+    "note": "Existing workplace and anonymous portrait placeholder retained unchanged. Real OMF screenshots, four explicitly fictional Signature concepts, Manrope, brand mark and optional owl reused. No newly generated raster assets, invented prices or customer statements."
+  }
+}

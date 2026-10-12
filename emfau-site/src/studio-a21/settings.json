@@ -1,0 +1,59 @@
+{
+  "portrait": "../assets/studio-a2/portrait-placeholder.webp",
+  "portrait_is_placeholder": true,
+  "portrait_width": 1122,
+  "portrait_height": 1402,
+  "portrait_caption": "Porträtstudie · Platzhalter für mein eigenes Foto",
+  "contact_email": null,
+  "contact_name": null,
+  "services": {
+    "onepager": {"starting_price": null},
+    "business": {"starting_price": null},
+    "club": {"starting_price": null}
+  },
+  "omf": {
+    "testimonial_enabled": false,
+    "quote": null,
+    "name": null,
+    "role": null
+  },
+  "design_guarantee_enabled": true,
+  "correction_rounds": null,
+  "process": [
+    {
+      "title": "Umfang und Angebot festlegen",
+      "text": "Wir klären Ihre Inhalte, die benötigten Seiten und Funktionen. Vor dem Start erhalten Sie ein festes Angebot mit dem vereinbarten Umfang. Hosting und spätere Betreuung besprechen wir gesondert."
+    },
+    {
+      "title": "Den Entwurf gemeinsam abstimmen",
+      "text": "Sie sehen die Gestaltung, bevor ich die vollständige Website entwickle. Wir besprechen Aufbau, Schrift und Farben. Welche Korrekturen enthalten sind, wird im Angebot vereinbart."
+    },
+    {
+      "title": "Umsetzen, prüfen und veröffentlichen",
+      "text": "Ich entwickle die abgestimmte Website und prüfe sie auf Desktop und Smartphone. Sie erhalten eine Vorschau zur Durchsicht. Veröffentlicht wird erst nach Ihrer Freigabe."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Was kostet meine Website?",
+      "answer": "Der Preis richtet sich nach den vereinbarten Seiten, Inhalten und Funktionen. Nach unserem ersten Gespräch erhalten Sie ein festes Angebot für diesen Umfang. Hosting und spätere Betreuung werden gesondert vereinbart."
+    },
+    {
+      "question": "Was ist mit Änderungen am Entwurf?",
+      "answer": "Wir besprechen Ihre Rückmeldung zum Entwurf und stimmen die Gestaltung gemeinsam ab. Welche Korrekturen enthalten sind, halten wir vor dem Start im Angebot fest. Zusätzliche Wünsche und mögliche Kosten klären wir vor der Umsetzung."
+    },
+    {
+      "question": "Was bedeutet die Entwurfs-Garantie?",
+      "answer": "Trifft der erste Entwurf das gemeinsam vereinbarte Briefing nicht, erarbeite ich eine zweite Gestaltungsrichtung ohne Mehrkosten. Die vollständige Umsetzung beginnt mit der abgestimmten Richtung. Die Garantie betrifft den Entwurf; weitere Inhalte und Funktionen werden im Angebot festgelegt.",
+      "requires_design_guarantee": true
+    },
+    {
+      "question": "Brauche ich bereits fertige Texte und Bilder?",
+      "answer": "Für das erste Gespräch reichen eine Beschreibung Ihres Angebots und die vorhandenen Inhalte. Gemeinsam klären wir, welche Texte und Bilder fehlen und wer sie liefert. Dieser Aufwand wird im Angebot berücksichtigt."
+    },
+    {
+      "question": "Wann geht die Website online?",
+      "answer": "Den Ablauf stimmen wir anhand des Umfangs und der verfügbaren Inhalte ab. Nach der Umsetzung prüfen wir die Vorschau gemeinsam auf Desktop und Smartphone. Erst nach Ihrer Freigabe wird die Website veröffentlicht."
+    }
+  ]
+}

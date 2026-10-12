@@ -16,6 +16,7 @@ Alle verbleibenden Website-Versionen sind hier direkt erreichbar:
 | --- | --- | --- |
 | **A · Editorial** | **[Gewählte Version öffnen](https://emfau88.github.io/LandingGame/studio-a/)** | Aktuelle A mit fotografischem Einstieg |
 | A 2.0 | [Weiterentwicklung öffnen](https://emfau88.github.io/LandingGame/studio-a2/) | Zusätzlicher Entwurf; A bleibt unverändert |
+| A 2.1 · Final Candidate | [A 2.1 öffnen](https://emfau88.github.io/LandingGame/studio-a21/) | Gezielte Weiterentwicklung; A 2.0 bleibt unverändert |
 | A · Bisheriges Editorial | [Bisheriges A öffnen](https://emfau88.github.io/LandingGame/studio-a-editorial/) | Vorherige A zum Vergleich |
 | Ursprüngliches Studio | [Studio öffnen](https://emfau88.github.io/LandingGame/studio/) | Früherer eigenständiger Studio-Entwurf |
 | Clean Grün | [Grüne Version öffnen](https://emfau88.github.io/LandingGame/?design=clean) | Farbvariante der ursprünglichen Landingpage |
@@ -43,6 +44,16 @@ Die [Dokumentation mit Dateien, Assetquellen, Platzhaltern und Prüfstand](emfau
 A 2.0 entwickelt A in eigenen Dateien weiter: natürlicheres Arbeitsplatzmotiv mit echter OMF-Ansicht im Laptop, offene Leistungsspalten ohne Icons oder Häkchenlisten und eine kuratierte Projektfolge. OMF bleibt das zentrale reale Kundenprojekt; Werkform, Lindenwirt und Aufschlag erhalten unterschiedliche Bildgewichte, Farbform bleibt als ergänzendes Konzept erreichbar. Ein konkreterer persönlicher Text, ein klar gekennzeichneter Schwarzweiß-Porträtplatzhalter und eine freihändige Signaturmarke ergänzen den Entwurf. Alle zehn Desktop-/Smartphone-Bildvergrößerungen und Demo-Links bleiben erhalten.
 
 Die [A-2.0-Dokumentation](emfau-site/src/studio-a2/README.md) beschreibt neue Dateien, Bildquellen, austauschbare Platzhalter und Prüfstand. Neue Bilder stammen aus Built-in ImageGen; eine Modellversion „2.5“ lässt sich über das verfügbare Werkzeug nicht auswählen oder verifizieren. Die aktuelle A, ihr bisheriger Editorial-Stand und deren Dateien werden für A 2.0 nicht verändert.
+
+### Studio A 2.1 · Final Candidate
+
+**[A 2.1 ausprobieren](https://emfau88.github.io/LandingGame/studio-a21/)** · **[A 2.0 unverändert vergleichen](https://emfau88.github.io/LandingGame/studio-a2/)**
+
+A 2.1 behält Arbeitsplatzmotiv, Manrope und Petrol bei. Die neue Hauptbotschaft „Websites mit klarer Linie.“ erklärt zusammen mit dem Untertitel das regionale Angebot. Offene, nummerierte Leistungsspalten, OMF als großes reales Projekt und unterschiedliche Konzeptpräsentationen ersetzen weitere Wiederholungen: Werkform und Lindenwirt zeigen ihre Desktopansichten ohne Smartphone-Mockup; Aufschlag zeigt beide Geräte, Farbform bleibt ein kleiner Teaser. Alle zehn Bilddialoge und Demo-Links sind erhalten.
+
+Der persönliche Text erklärt die direkte Zusammenarbeit. Eine leicht unregelmäßigere Signaturmarke ist das einzige neue Grafikasset; Arbeitsplatz und klar gekennzeichneter Porträtplatzhalter bleiben unverändert. Ablauf, FAQ und eine sachliche Entwurfs-Garantie erklären Angebot, Umfang, Entwurfsabstimmung und Freigabe. Preise und OMF-Kundenstatement sind nur vorbereitet und ohne echte Daten unsichtbar. Vergleichsnavigation, `noindex,nofollow` und lokale Formularvorschau bleiben erhalten.
+
+Die [A-2.1-Dokumentation](emfau-site/src/studio-a21/README.md) beschreibt Dateien, Konfiguration, offene Angaben und den tatsächlichen Prüfstand. A 2.0 und sämtliche bisherigen Seitendateien bleiben unverändert.
 
 **[Studio · neuer eigenständiger Entwurf](https://emfau88.github.io/LandingGame/studio/)**
 
