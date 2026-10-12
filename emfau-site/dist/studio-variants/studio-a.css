@@ -150,6 +150,7 @@
 .studio-a-photo .a-site-footer :focus-visible{outline-color:#f4f6eb}
 .studio-a-photo .a-site-footer a:hover,.studio-a-photo .a-site-footer button:hover{color:#fff;border-color:#dfece5}
 .studio-a-photo .a-archive-link{display:none}
+@media(min-width:1441px){.studio-a-photo .a-hero-background{mask-image:linear-gradient(90deg,transparent,#000 75px,#000 calc(100% - 75px),transparent)}}
 @media(min-width:1600px){.studio-a-photo .a-hero{min-height:565px;padding-top:56px}.studio-a-photo .a-hero-art{top:-75px}.studio-a-photo .hero-copy{width:44%}}
 @media(max-width:1200px){
   .studio-a-photo .wrap{width:calc(100% - 72px)}
